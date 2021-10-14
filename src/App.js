@@ -5,7 +5,7 @@ import numbers from './Pages/numbers'
 import newaddition from './Pages/basicaddition'
 import newsubtraction from './Pages/basicsubtraction'
 
-import Tracker from './Components/tracker'
+//import Tracker from './Components/tracker'
 import Navbar from './Components/Navbar.js'
 import React from 'react';
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
