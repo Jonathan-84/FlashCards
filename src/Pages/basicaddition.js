@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Addition from '../Components/Addition';
 
 
 export default class newaddition extends Component {
@@ -27,13 +28,17 @@ export default class newaddition extends Component {
     const {firstnumber,secondnumber} = this.state;
     
     return (
+      <>
    <div>
         <h2>New Addition</h2>
 
         <button title="Generate Random Number" onClick={this.generateNumbers}>Press Me</button> 
         <h2>{firstnumber} + {secondnumber}</h2>
-
-        </div>
+        
+           <Addition first={this.state.firstnumber} second={this.state.secondnumber}></Addition>
+           
+           </div>
+           </>
     );
   }
 }

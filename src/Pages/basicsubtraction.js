@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Subtraction from '../Components/Subtraction';
 
 export default class newsubtraction extends Component {
 
@@ -34,6 +34,7 @@ export default class newsubtraction extends Component {
     (firstnumber >= secondnumber) {
       subtraction = (
         <h2>{firstnumber} - {secondnumber}</h2>
+        
       )
     }
     else{
@@ -49,6 +50,8 @@ export default class newsubtraction extends Component {
         <button title="Generate Random Number" onClick={this.generateNumbers}>Press Me</button> 
         
         {subtraction}
+
+        <Subtraction random1={this.state.firstnumber} random2={this.state.secondnumber}></Subtraction>
 
         </div>
     );
