@@ -27,9 +27,9 @@ function Navbar(){
                 </ul>
                
                 <ul class="nav-item dropdown">
-        <a className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/#"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Math
-        </a>
+        </Link>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <ul>
                   <Link to={"/newaddition"}className="nav-text">Beginner Addition</Link>
