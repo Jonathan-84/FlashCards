@@ -18,7 +18,7 @@ function App() {
     <HashRouter basename={process.env.PUBLIC_URL}>
         <>
           <Navbar />
-          <Tracker />
+        {/*}  <Tracker />*/}
           <Switch>
         <Route exact path= {'/home'} component={Home}/>
          <Route exact path= {'/capital'} component={capital}/>
