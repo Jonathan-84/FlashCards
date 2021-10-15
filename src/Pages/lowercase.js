@@ -31,13 +31,18 @@ export default class lowercase extends Component {
       const {lowercaseHolder} = this.state;
       
       return (
-     <div>
-          <h2>Lowercase</h2>
-  
-          <button title="Generate Random Number" onClick={this.randomLowercase}>Press Me</button> 
-          <h2>{lowercaseHolder}</h2>
-  
-          </div>
+     <div className="col d-flex justify-content-center mt-5">
+
+<div className=" card text-white bg-info mb-3 d-flex justify-content-center col-3" >
+  <div className="card-header">Lowercase</div>
+  <div className="card-body">
+  <button title="Generate Random Number" onClick={this.randomLowercase}>Press Me</button> 
+  <br></br>
+  <br></br>
+          <h2 className="text-center">{lowercaseHolder}</h2>
+  </div>
+  </div>
+  </div>
       );
     }
   }
