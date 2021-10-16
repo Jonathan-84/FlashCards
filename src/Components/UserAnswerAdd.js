@@ -1,9 +1,15 @@
+// take the answre from Addition and bring it forward.. Pass it to this
+// set the if the answer = user answer (true), if answer not equal to user (false)
+//pass the true and false to the tracker section--- true equals add point, false equals subtract 
+//and leave resret button
+
+//start with subtraction then addition
+
 import React, { Component } from 'react';
-import UserAdd from './UserAnswerAdd';
 
 
 
-export default class Addition extends Component {
+export default class UserAdd extends Component {
 
   constructor(props) {
     super();
@@ -29,17 +35,14 @@ export default class Addition extends Component {
   }
 
 
-
   render() {
 
 
-    const {result} = this.state;
+   // const {result} = this.state;
     
     return (
    <div>
-        <button title="Generate Random Number" onClick={this.addNumbers}>Check the Answer</button> 
-       { <h2 className='text-center'>{result}</h2>}
-       <UserAdd random1={this.state.firstnumber} random2={this.state.secondnumber}></UserAdd>
+     <h2>I'm a placeholder</h2>
         </div>
     );
   }
