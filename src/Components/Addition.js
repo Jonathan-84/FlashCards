@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 
+
 export default class Addition extends Component {
 
   constructor(props) {
@@ -35,7 +36,7 @@ export default class Addition extends Component {
     return (
    <div>
         <button title="Generate Random Number" onClick={this.addNumbers}>Check the Answer</button> 
-        <h2>{result}</h2>
+        <h2 className='text-center'>{result}</h2>
 
         </div>
     );

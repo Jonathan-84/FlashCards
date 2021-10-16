@@ -43,7 +43,7 @@ export default class Subtraction extends Component {
     return (
    <div>
         <button title="Generate Random Number" onClick={this.minusNumbers}>Check the Answer</button> 
-        <h2>{minus}</h2>
+        <h2 className='text-center'>{minus}</h2>
 
         </div>
     );

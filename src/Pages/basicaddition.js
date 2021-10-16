@@ -29,19 +29,25 @@ export default class newaddition extends Component {
     
     return (
       <>
-   <div>
-        <h2>New Addition</h2>
-
+  <div className="col d-flex justify-content-center mt-5">
+      <div className=" card text-white bg-info mb-3 d-flex justify-content-center col-3" >
+  <div className="card-header">Basic Addition</div>
+  <div className="card-body ">
+    <div className='d-flex justify-content-center'>
         <button title="Generate Random Number" onClick={this.generateNumbers}>Press Me</button> 
-        <h2>{firstnumber} + {secondnumber}</h2>
-        
+        </div>
+        <h2 className='text-center'>{firstnumber} + {secondnumber}</h2>
+        <br></br>
+        <br></br>
+        <div className='d-flex justify-content-center'>
            <Addition first={this.state.firstnumber} second={this.state.secondnumber}></Addition>
-           
            </div>
-           </>
-    );
+           </div>
+  </div>
+  </div>
+  </>
+      );
+    }
   }
-}
-
 
 

@@ -24,15 +24,22 @@ export default class numbers extends Component {
     const {numberHolder} = this.state;
     
     return (
-   <div>
-        <h2>Numbers</h2>
 
+  <div className="col d-flex justify-content-center mt-5">
+      <div className=" card text-white bg-info mb-3 d-flex justify-content-center col-3" >
+  <div className="card-header">Numbers</div>
+  <div className="card-body">
         <button title="Generate Random Number" onClick={this.generateRandomNumber}>Press Me</button> 
-        <h2>{numberHolder}</h2>
+        <br></br>
+  <br></br>
+        <h2 className="text-center">{numberHolder}</h2>
 
         </div>
-    );
+  </div>
+  </div>
+      );
+    }
   }
-}
+
 
 
