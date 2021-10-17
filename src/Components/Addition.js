@@ -1,3 +1,5 @@
+//this file will be deleted, I've added the actual math to the bassic addition.js
+
 import React, { Component } from 'react';
 import UserAdd from './UserAnswerAdd';
 

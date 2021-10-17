@@ -15,24 +15,36 @@ export default class UserAdd extends Component {
     super();
     this.state = {
       // This is a default value...
-      result:[]
-
+      users:[],
+      grading:[]
     }
   }
 
-  
-  addNumbers = () => {
+  handleInput = event => {
+    this.setState({ users: event.target.value} );
+  };
+
+
+ logValue = () => {
+
+    console.log(this.state.users);
+
     
-    let first= this.props.first;
-    let second= this.props.second;
-    console.log (first, second);
+ };
 
-    let answer= first + second
 
-    this.setState({ result: answer })
 
-    console.log(answer)
+ addCompare = () => {
+  const {users,grading} = this.state;
+  let answer= this.props.sum;
+  if (users === answer){
+    this.setState({'grading':'correct'})
   }
+  else {
+    this.setState({'grading':'incorrect'})
+  }
+  console.log(users, answer, this.grading)
+}
 
 
   render() {
@@ -41,9 +53,13 @@ export default class UserAdd extends Component {
    // const {result} = this.state;
     
     return (
-   <div>
-     <h2>I'm a placeholder</h2>
-        </div>
-    );
-  }
+      <div>
+      <input onChange={this.handleInput} placeholder="Enter Your Answer" />
+      <button onClick={this.logValue}>Check the answer</button>
+      <button onClick={this.addCompare}>Compare your answer</button>
+      
+
+    </div>
+  );
+}
 }
