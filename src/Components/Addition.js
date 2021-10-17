@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserAdd from './UserAnswerAdd';
+//import UserAdd from './UserAnswerAdd';
 
 
 
@@ -39,7 +39,6 @@ export default class Addition extends Component {
    <div>
         <button title="Generate Random Number" onClick={this.addNumbers}>Check the Answer</button> 
        { <h2 className='text-center'>{result}</h2>}
-       <UserAdd random1={this.state.firstnumber} random2={this.state.secondnumber}></UserAdd>
         </div>
     );
   }

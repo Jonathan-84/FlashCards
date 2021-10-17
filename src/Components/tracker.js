@@ -36,11 +36,18 @@ reset = () => {
   };
 
   render() {
+
+
     const { count } = this.state;
    
     let top;
     if (count === 10) {
       top =(
+        // Like many, Robin Williams gave me years of laughs and amazing childhood memories (from his roles)
+        //Unfortunately like many, he gave his all to others but struggled himself
+        //If, you or anyone you know, are having the same struggles please call 1-800-273-8255
+        //the U.S. Suicide Prevent hotline... You have a lot to offer the world, after all, 
+        // you found this hidden message, so take a care of yourself
       <img src="https://images.gr-assets.com/hostedimages/1549287369ra/27013190.gif" class="img-fluid" alt="Genie Congratulations"></img>
       )
     }
@@ -101,19 +108,25 @@ reset = () => {
     }
 
     return (
-    
-        <div>
-            <div className="col d-flex justify-content-center mt-5">
-            <div className=" card text-white bg-warning mb-3 d-flex justify-content-center col-3" >
+        <div className='mb-0'>
+            <div className="col d-flex justify-content-center mt-3">
+            <div className=" card text-white bg-warning mb-1 d-flex justify-content-center col-4" >
+            <p className='text-center'>Correct = (<i className="bi bi-check-lg"></i>) Incorrect = (<i className="bi bi-x-lg"></i>).
+       Reset = (<i className="bi bi-trash"></i>) </p>
             <br></br>
              <div class="progress">  
   {percentage}
 </div>
 <br></br>
      <div className='d-flex justify-content-center'>
-             <button title="Generate Random Number" onClick={this.correct}>Correct</button> 
-             <button title="Generate Random Number" onClick={this.wrong}>Incorrect</button> 
-             <button title="Generate Random Number" onClick={this.reset}>Reset</button> 
+       <div className='container'>
+    <div class="col d-flex justify-content-between">
+             <button title="Add Correct" onClick={this.correct} type="button" className="btn btn-secondary btn-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-check-lg"></i></button>
+             <button title="Subtract Incorrect" onClick={this.wrong} type="button" className="btn btn-secondary btn-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-x-lg"></i></button> 
+             <button title="Reset" onClick={this.reset} type="button" className="btn btn-secondary btn-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-trash"></i></button> 
+         </div>
+           
+             </div>
              </div>
              <br></br>
              {top}

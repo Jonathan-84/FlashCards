@@ -31,10 +31,10 @@ export default class newaddition extends Component {
       <>
   <div className="col d-flex justify-content-center mt-5">
       <div className=" card text-white bg-info mb-3 d-flex justify-content-center col-3" >
-  <div className="card-header">Basic Addition</div>
+  <div className="card-header text-center">Basic Addition</div>
   <div className="card-body ">
     <div className='d-flex justify-content-center'>
-        <button title="Generate Random Number" onClick={this.generateNumbers}>Press Me</button> 
+        <button title="Generate Random Number" onClick={this.generateNumbers}>Random Numbers</button> 
         </div>
         <h2 className='text-center'>{firstnumber} + {secondnumber}</h2>
         <br></br>
