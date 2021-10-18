@@ -109,8 +109,8 @@ reset = () => {
 
     return (
         <div className='mb-0'>
-            <div className="col d-flex justify-content-center mt-3">
-            <div className=" card text-white bg-warning mb-1 d-flex justify-content-center col-4" >
+            <div className="col d-flex justify-content-center mt-3 ">
+            <div className=" card text-white bg-warning mb-1 d-flex justify-content-center col col-md-4" >
             <p className='text-center'>Correct = (<i className="bi bi-check-lg"></i>) Incorrect = (<i className="bi bi-x-lg"></i>).
        Reset = (<i className="bi bi-trash"></i>) </p>
             <br></br>
@@ -121,9 +121,9 @@ reset = () => {
      <div className='d-flex justify-content-center'>
        <div className='container'>
     <div class="col d-flex justify-content-between flex-column flex-md-row">
-             <button title="Add Correct" onClick={this.correct} type="button" className="btn btn-secondary btn-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-check-lg"></i></button>
-             <button title="Subtract Incorrect" onClick={this.wrong} type="button" className="btn btn-secondary btn-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-x-lg"></i></button> 
-             <button title="Reset" onClick={this.reset} type="button" className="btn btn-secondary btn-lg" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-trash"></i></button> 
+             <button title="Add Correct" onClick={this.correct} type="button" className="btn btn-secondary btn-lg m-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-check-lg"></i></button>
+             <button title="Subtract Incorrect" onClick={this.wrong} type="button" className="btn btn-secondary btn-lg m-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-x-lg"></i></button> 
+             <button title="Reset" onClick={this.reset} type="button" className="btn btn-secondary btn-lg m-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="bi bi-trash"></i></button> 
          </div>
            
              </div>

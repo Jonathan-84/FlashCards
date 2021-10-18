@@ -29,8 +29,9 @@ export default class newaddition extends Component {
     
     return (
       <>
-  <div className="col d-flex justify-content-center mt-5">
-      <div className=" card text-white bg-info mb-3 d-flex justify-content-center col-3" >
+   <div className='mb-0'>
+        <div className="col d-flex justify-content-center mt-3 ">
+      <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
   <div className="card-header text-center">Basic Addition</div>
   <div className="card-body ">
     <div className='d-flex justify-content-center'>
@@ -41,6 +42,7 @@ export default class newaddition extends Component {
         <br></br>
         <div className='d-flex justify-content-center'>
            <Addition first={this.state.firstnumber} second={this.state.secondnumber}></Addition>
+           </div>
            </div>
            </div>
   </div>
