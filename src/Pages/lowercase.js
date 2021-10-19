@@ -38,9 +38,8 @@ export default class lowercase extends Component {
   <div className="card-header text-center">Lowercase</div>
   <div className="card-body d-flex justify-content-center">
   <button title="Generate Random Number" onClick={this.randomLowercase}>Press Me</button> 
-  <br></br>
-  <br></br>
           <h2 className="text-center">{lowercaseHolder}</h2>
+         
   </div>
   </div>
   </div>

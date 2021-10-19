@@ -40,12 +40,13 @@ export default class newaddition extends Component {
         <h2 className='text-center'>{firstnumber} + {secondnumber}</h2>
         <br></br>
         <br></br>
+   
         <div className='d-flex justify-content-center'>
            <Addition first={this.state.firstnumber} second={this.state.secondnumber}></Addition>
            </div>
            </div>
            </div>
-  </div>
+           </div>
   </div>
   </>
       );
