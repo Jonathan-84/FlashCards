@@ -25,16 +25,18 @@ export default class numbers extends Component {
     
     return (
 
-  <div className="col d-flex justify-content-center mt-5">
-      <div className=" card text-white bg-info mb-3 d-flex justify-content-center col-3" >
-  <div className="card-header">Numbers</div>
-  <div className="card-body">
+      <div className='mb-0'>
+      <div className="col d-flex justify-content-center mt-3 ">
+      <div className=" card text-white bg-info mb-3 d-flex justify-content-center col col-md-4" >
+  <div className="card-header text-center">Numbers</div>
+  <div className="card-body d-flex justify-content-center">
         <button title="Generate Random Number" onClick={this.generateRandomNumber}>Press Me</button> 
         <br></br>
   <br></br>
         <h2 className="text-center">{numberHolder}</h2>
 
         </div>
+  </div>
   </div>
   </div>
       );

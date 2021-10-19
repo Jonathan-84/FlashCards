@@ -45,9 +45,10 @@ export default class newsubtraction extends Component {
     
     return (
       <>
-      <div className="col d-flex justify-content-center mt-5">
-          <div className=" card text-white bg-info mb-3 d-flex justify-content-center col-3" >
-      <div className="card-header">Basic Addition</div>
+       <div className='mb-0'>
+        <div className="col d-flex justify-content-center mt-3 ">
+          <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
+      <div className="card-header text-center">Basic Subtraction</div>
       <div className="card-body">
       <div className='d-flex justify-content-center'>
         <button title="Generate Random Number" onClick={this.generateNumbers}>Press Me</button>
@@ -59,6 +60,7 @@ export default class newsubtraction extends Component {
         <Subtraction random1={this.state.firstnumber} random2={this.state.secondnumber}></Subtraction>
      </div>
         </div>
+  </div>
   </div>
   </div>
   </>
