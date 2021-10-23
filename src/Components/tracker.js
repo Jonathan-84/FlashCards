@@ -24,8 +24,11 @@ export default class Tracker extends Component {
 }
 
 randomTryAgain = ()=> {
-  var trylinks = ['https://3.bp.blogspot.com/-OllJs9voxfE/Wh-HQ-vimuI/AAAAAAAAYgU/F4WUf6ENC5cPr58nVlEux_dGkYWNZl4VwCLcBGAs/s1600/infinity%2Bwar%2Bthanos%2Bvillain%2Btrailer.gif','https://media.tenor.com/images/ae90328133ae4ae4b471322dd38dfbc7/tenor.gif','https://i2.wp.com/bloody-disgusting.com/wp-content/uploads/2015/11/slimer-ghostbusters.gif?resize=620%2C200','https://giphy.com/gifs/officialblueytv-bluey-featherwand-ehD1LVNO8ssdA7rZdj',
-  'https://media1.tenor.com/images/a241aa63432145786140a62156d23a6d/tenor.gif?itemid=13313989'];
+  
+  var trylinks = [
+    //'https://3.bp.blogspot.com/-OllJs9voxfE/Wh-HQ-vimuI/AAAAAAAAYgU/F4WUf6ENC5cPr58nVlEux_dGkYWNZl4VwCLcBGAs/s1600/infinity%2Bwar%2Bthanos%2Bvillain%2Btrailer.gif','https://media.tenor.com/images/ae90328133ae4ae4b471322dd38dfbc7/tenor.gif','https://i2.wp.com/bloody-disgusting.com/wp-content/uploads/2015/11/slimer-ghostbusters.gif?resize=620%2C200','https://giphy.com/gifs/officialblueytv-bluey-featherwand-ehD1LVNO8ssdA7rZdj',
+  //'https://media1.tenor.com/images/a241aa63432145786140a62156d23a6d/tenor.gif?itemid=13313989',
+''];
     
   let randomTryLink=trylinks[Math.floor(Math.random()*trylinks.length)];
   this.setState({
@@ -55,7 +58,7 @@ reset = () => {
 
   wrong = () => {
     if (this.state.count > 0){ 
-  // as of now, I belief a gif... even wrong is a reward... so removed for now    this.randomTryAgain()
+  this.randomTryAgain()
     this.setState({
       count: this.state.count - 1
     });
