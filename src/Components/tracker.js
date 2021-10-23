@@ -10,7 +10,11 @@ export default class Tracker extends Component {
     };
   }
 
+
+
   correct = () => {
+    let user = this.props.sum
+    console.log(user)
     if (this.state.count < 10){
     this.setState({
       

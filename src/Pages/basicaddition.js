@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserAdd from '../Components/UserAnswerAdd';
+//import Tracker from '../Components/tracker';
 
 
 export default class newaddition extends Component {
@@ -30,7 +30,7 @@ export default class newaddition extends Component {
   }
 
 
-  render() {
+  render(generateNumbers) {
 
     const {firstnumber,secondnumber,sum} = this.state;
     console.log(sum)
@@ -49,7 +49,8 @@ export default class newaddition extends Component {
         <br></br>
    
         <div className='d-flex justify-content-center'>
-           <UserAdd sum={this.state.sum} ></UserAdd>
+      {/*<Tracker sum={this.state.sum} />*/}
+      {generateNumbers}
            </div>
            </div>
            </div>

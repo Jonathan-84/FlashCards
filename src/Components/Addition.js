@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 //import UserAdd from './UserAnswerAdd';
+import Tracker from '../Components/tracker';
 
 
 
@@ -41,7 +42,9 @@ export default class Addition extends Component {
    <div>
         <button title="Generate Random Number" onClick={this.addNumbers}>Check the Answer</button> 
        { <h2 className='text-center'>{result}</h2>}
-        </div>
+        
+            <Tracker user={this.state.result} />
+            </div>
     );
   }
 }

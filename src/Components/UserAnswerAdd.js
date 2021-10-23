@@ -6,7 +6,7 @@
 //start with subtraction then addition
 
 import React, { Component } from 'react';
-
+import Tracker from '../Components/tracker';
 
 
 export default class UserAdd extends Component {
@@ -18,6 +18,7 @@ export default class UserAdd extends Component {
       users:[],
       grading:[]
     }
+  
   }
 
   handleInput = event => {
@@ -26,38 +27,37 @@ export default class UserAdd extends Component {
 
 
  logValue = () => {
-
     console.log(this.state.users);
-
-    
  };
 
 
 
  addCompare = () => {
-  const {users,grading} = this.state;
+ /* const {users} = this.state;
   let answer= this.props.sum;
   if (users === answer){
-    this.setState({'grading':'correct'})
+
+    this.setState({grading: true});
   }
-  else {
-    this.setState({'grading':'incorrect'})
+  else  { 
+    this.setState({grading: false});
   }
-  console.log(users, answer, this.grading)
-}
+  return
+}*/
+ }
 
 
   render() {
-
+    const {grading} = this.state;
+    console.log(grading)
 
    // const {result} = this.state;
     
     return (
       <div>
       <input onChange={this.handleInput} placeholder="Enter Your Answer" />
-      <button onClick={this.logValue}>Check the answer</button>
       <button onClick={this.addCompare}>Compare your answer</button>
-      
+      <Tracker user={this.state.result} />
 
     </div>
   );
