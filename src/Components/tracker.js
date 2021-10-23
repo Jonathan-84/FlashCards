@@ -6,12 +6,38 @@ export default class Tracker extends Component {
   constructor() {
     super();
     this.state = {
-      count: 0
+      count: 0,
+      gif:[]
     };
   }
 
+  randomKudos = ()=> {
+    var links = ['https://i.pinimg.com/originals/64/23/08/642308a257702c2c9aa0cf29232a3deb.gif','https://media1.tenor.com/images/1d80a4d408ae2264af736cd62d70d0ff/tenor.gif?itemid=4811418','http://www.clipartsuggest.com/images/601/great-work-clipart-cliparthut-free-clipart-HRW5vv-clipart.gif','https://media1.tenor.com/images/0762c5d136b4574a7031a5e236233a09/tenor.gif?itemid=14357666','https://media1.tenor.com/images/9ac3cb9c126400a33ec7ad9c80f90539/tenor.gif?itemid=15538476', 'https://media.tenor.co/images/179249ffb72b03093a6d0fe6ada397c8/tenor.gif',
+ 'https://www.genymama.com/uploads/1/1/3/9/113908711/pjmasks_orig.gif'];
+    
+  let randomLink=links[Math.floor(Math.random()*links.length)];
+  this.setState({
+      
+    gif: randomLink
+    });
+  console.log(randomLink)
+}
+
+randomTryAgain = ()=> {
+  var trylinks = ['https://3.bp.blogspot.com/-OllJs9voxfE/Wh-HQ-vimuI/AAAAAAAAYgU/F4WUf6ENC5cPr58nVlEux_dGkYWNZl4VwCLcBGAs/s1600/infinity%2Bwar%2Bthanos%2Bvillain%2Btrailer.gif','https://media.tenor.com/images/ae90328133ae4ae4b471322dd38dfbc7/tenor.gif','https://i2.wp.com/bloody-disgusting.com/wp-content/uploads/2015/11/slimer-ghostbusters.gif?resize=620%2C200','https://giphy.com/gifs/officialblueytv-bluey-featherwand-ehD1LVNO8ssdA7rZdj',
+  'https://media1.tenor.com/images/a241aa63432145786140a62156d23a6d/tenor.gif?itemid=13313989'];
+    
+  let randomTryLink=trylinks[Math.floor(Math.random()*trylinks.length)];
+  this.setState({
+      
+    gif: randomTryLink
+    });
+  console.log(randomTryLink)
+}
+
   correct = () => {
     if (this.state.count < 10){
+      this.randomKudos()
     this.setState({
       
       count: this.state.count + 1
@@ -28,7 +54,8 @@ reset = () => {
   
 
   wrong = () => {
-    if (this.state.count > 0){
+    if (this.state.count > 0){ 
+      this.randomTryAgain()
     this.setState({
       count: this.state.count - 1
     });
@@ -38,8 +65,9 @@ reset = () => {
   render() {
 
 
-    const { count } = this.state;
+    const { count, gif } = this.state;
    
+    
     let top;
     if (count === 10) {
       top =(
@@ -48,7 +76,17 @@ reset = () => {
         //If, you or anyone you know, are having the same struggles please call 1-800-273-8255
         //the U.S. Suicide Prevent hotline... You have a lot to offer the world, after all, 
         // you found this hidden message, so take a care of yourself
+      <>
+          <p className='text-center font-weight-bold Congrats-font'>You've Reached 10 Points!!!!</p>
       <img src="https://images.gr-assets.com/hostedimages/1549287369ra/27013190.gif" class="img-fluid" alt="Genie Congratulations"></img>
+  
+      </>
+      )
+    }
+
+    if (count < 10) {
+      top =(
+        <img src={gif} class="img-fluid" alt=""></img>
       )
     }
 
