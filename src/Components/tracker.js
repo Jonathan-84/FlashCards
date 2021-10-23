@@ -55,7 +55,7 @@ reset = () => {
 
   wrong = () => {
     if (this.state.count > 0){ 
-      this.randomTryAgain()
+  // as of now, I belief a gif... even wrong is a reward... so removed for now    this.randomTryAgain()
     this.setState({
       count: this.state.count - 1
     });
