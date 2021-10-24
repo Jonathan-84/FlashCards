@@ -45,7 +45,7 @@ randomTryAgain = ()=> {
       
       count: this.state.count + 1
       });
-}
+    }
 };
 
 reset = () => {
