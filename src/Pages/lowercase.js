@@ -36,9 +36,14 @@ export default class lowercase extends Component {
 
 <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
   <div className="card-header text-center">Lowercase</div>
-  <div className="card-body d-flex justify-content-center">
+  <div className="card-body">
+  <div className='col  d-flex justify-content-center'>
   <button title="Generate Random Number" onClick={this.randomLowercase}>Press Me</button> 
+        </div>
+        <br></br>
+        <div className='col  d-flex justify-content-center'>
           <h2 className="text-center">{lowercaseHolder}</h2>
+          </div>
          
   </div>
   </div>

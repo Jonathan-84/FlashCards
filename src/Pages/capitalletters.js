@@ -36,11 +36,15 @@ export default class capital extends Component {
 
         <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
           <div className="card-header text-center">Capital Letters aka Upper Case</div>
-          <div className="card-body d-flex justify-content-center">
-          <button title="Generate Random Number" className="align-self-center" onClick={this.randomUppercase}>Press Me</button> 
+          <div className="card-body">
+            <div className='col  d-flex justify-content-center'>
+          <button title="Generate Random Number" className="" onClick={this.randomUppercase}>Press Me</button> 
+          </div>
           <br></br>
-  <br></br>
+          <div className='col  d-flex justify-content-center'>
           <h2 className="text-center">{uppercaseHolder}</h2>
+          </div>
+      
   </div>
   </div>
   </div>

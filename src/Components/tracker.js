@@ -48,7 +48,21 @@ randomTryAgain = ()=> {
     }
 };
 
+resetgif = ()=> {
+  
+  var options = [
+''];
+    
+  let scratch=options[Math.floor(Math.random()*options.length)];
+  this.setState({
+      
+    gif: scratch
+    });
+  console.log(scratch)
+}
+
 reset = () => {
+  this.resetgif()
   this.setState({
     count: 0
     
