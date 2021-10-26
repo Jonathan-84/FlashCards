@@ -1,4 +1,5 @@
 //this file will be deleted, I've added the actual math to the bassic addition.js
+//for now, this page is not used for anything... only basic add, useransweradd, 
 
 import React, { Component } from 'react';
 //import UserAdd from './UserAnswerAdd';

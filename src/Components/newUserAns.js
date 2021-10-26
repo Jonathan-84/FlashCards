@@ -1,22 +1,19 @@
-// take the answre from Addition and bring it forward.. Pass it to this
-// set the if the answer = user answer (true), if answer not equal to user (false)
-//pass the true and false to the tracker section--- true equals add point, false equals subtract 
-//and leave resret button
+/// starts at newTracker--- passes the add,subtract,reset functions
+/// then new BasicAdd (generates number and adds them)
+/// newUser answer to collec tthe user answer and put the log based on their answer
+/// pass that to this, the logic to call the tracker functions based on conditionals
 
-//start with subtraction then addition
 
 import React, { Component } from 'react';
-import Tracker from './tracker';
 
 
-export default class UserAdd extends Component {
+export default class NewUserAdd extends Component {
 
   constructor(props) {
     super();
     this.state = {
       // This is a default value...
-      users:[],
-      grading:[]
+      users:[]
     }
   
   }
@@ -35,36 +32,41 @@ export default class UserAdd extends Component {
  };*/
 
 
+ right() {
+    this.props.correct()
+  }
+
+  wrong() {
+      this.props.wrong()
+  }
 
  addCompare = () => {
   const {users} = this.state;
   console.log(users);
-//  let answer= this.props.sum;
- // console.log(answer)
-/*
+ let answer= this.props.sum;
+ console.log(answer)
+
   if (users === answer){
     console.log(answer)
-    this.setState({grading: true});
+   this.right()
   }
   else  { 
     console.log(answer)
-    this.setState({grading: false});
-  }*/
+    this.wrong()
+  }
   return
 }
  
 
 
   render() {
-    const {grading} = this.state;
-    console.log(grading)
 
    
     return (
       <div>
       <input onChange={this.handleInput} placeholder="Enter Your Answer" />
       <button onClick={this.addCompare}>Compare your answer</button>
-      <Tracker user={this.state.users} answer={this.props.sum} addRight={this.state.grading} />
+      
    
 
     </div>

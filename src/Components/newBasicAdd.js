@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import UserAdd from '../Components/UserAnswerAdd';
+import NewUserAdd from '../Components/newUserAns';
 
 
-export default class newaddition extends Component {
+export default class NewAdd extends Component {
 
   constructor() {
     super();
+
     this.state = {
       // This is a default value...
       firstnumber: [0],
@@ -18,6 +19,7 @@ export default class newaddition extends Component {
   generateNumbers = () => {
     var randomNumber1 = Math.floor(Math.random() * 10) + 1;
     var randomNumber2 = Math.floor(Math.random() * 10) + 1;
+    console.log ( this.props.correct, this.props.wrong, this.props.reset)
 
     //test for future approach add her, passing math to the user answer
     //Restart here- find way to reswizzle the Addition.js (put the check answer button on next page to compare user
@@ -29,11 +31,11 @@ export default class newaddition extends Component {
     this.setState({ firstnumber:randomNumber1,secondnumber:randomNumber2, sum:added })
   }
 
+ 
 
-  render(generateNumbers) {
+  render() {
 
-    const {firstnumber,secondnumber,sum} = this.state;
-    console.log(sum)
+    const {firstnumber,secondnumber} = this.state;
     return (
       <>
    <div className='mb-0'>
@@ -49,7 +51,7 @@ export default class newaddition extends Component {
         <br></br>
    
         <div className='d-flex justify-content-center'>
-      <UserAdd sum={this.state.sum} />
+        <NewUserAdd sume={this.sum} correct={this.correct} wrong={this.wrong} reset={this.reset} />
            </div>
            </div>
            </div>
