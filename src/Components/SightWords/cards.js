@@ -25,8 +25,10 @@ function Cards (props){
   {/*<button onClick={() => { ref.current.toggle(); }}> Toggle via button</button>*/}
   </div>
     </FrontSide>
-    <BackSide className='d-flex justify-content-center'>
+    <BackSide>
+      <div className='d-flex justify-content-center'>
  <p> {props.sentence}</p>
+ </div>
  </BackSide>
  </div>
           
