@@ -18,8 +18,6 @@ export default class SightWords extends Component {
       {/*Text Container*/}      
       <div className="rounded text-white bg-info text-center p-4">
     <h1 className=""> Sight Words </h1>
-
-     <p className=""> Need to fix the styling</p>
       </div>
       </div>
    
