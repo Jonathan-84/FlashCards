@@ -27,7 +27,7 @@ export default class SightWords extends Component {
 <div class="card-columns p-3">
 {Words.map((e)=>{
        return (
-       <Cards word={e.word} definition={e.definition} sentence={e.sentence}/>
+       <Cards word={e.word} sentence={e.sentence}/>
      );})}
         </div>
      </div>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-
+/// look to remove the http for the gifs, it seem slike it may be causing an issue, it may
+///be more secure then as well
 
 export default class Tracker extends Component {
   constructor() {

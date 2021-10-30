@@ -26,7 +26,6 @@ function Cards (props){
   </div>
     </FrontSide>
     <BackSide>
- <p> {props.definition}</p>
  <p> {props.sentence}</p>
  </BackSide>
  </div>
