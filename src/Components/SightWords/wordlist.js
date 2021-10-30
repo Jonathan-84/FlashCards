@@ -61,7 +61,7 @@ sentence:"I see the dog. "
   sentence:"Dad said hi!"
 },{
 word:"like",
-sentence:"I like Pj Masks."
+sentence:"I like PJ Masks."
 },
   {
     word:"my",
@@ -75,7 +75,7 @@ sentence:"I like Pj Masks."
   sentence:"I will help mom."
 },{
 word:"of",
-sentence:"I am Gecko of PJ Masks."
+sentence:"I want a box of candy."
 },
   {
     word:"you",
