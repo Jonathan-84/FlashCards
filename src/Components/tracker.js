@@ -12,7 +12,7 @@ export default class Tracker extends Component {
   }
 
   randomKudos = ()=> {
-    var links = ['https://i.pinimg.com/originals/64/23/08/642308a257702c2c9aa0cf29232a3deb.gif','https://media1.tenor.com/images/1d80a4d408ae2264af736cd62d70d0ff/tenor.gif?itemid=4811418','http://www.clipartsuggest.com/images/601/great-work-clipart-cliparthut-free-clipart-HRW5vv-clipart.gif','https://media1.tenor.com/images/0762c5d136b4574a7031a5e236233a09/tenor.gif?itemid=14357666','https://media1.tenor.com/images/9ac3cb9c126400a33ec7ad9c80f90539/tenor.gif?itemid=15538476', 'https://media.tenor.co/images/179249ffb72b03093a6d0fe6ada397c8/tenor.gif',
+    var links = ['https://media1.tenor.com/images/1d80a4d408ae2264af736cd62d70d0ff/tenor.gif?itemid=4811418','http://www.clipartsuggest.com/images/601/great-work-clipart-cliparthut-free-clipart-HRW5vv-clipart.gif','https://media1.tenor.com/images/0762c5d136b4574a7031a5e236233a09/tenor.gif?itemid=14357666','https://media1.tenor.com/images/9ac3cb9c126400a33ec7ad9c80f90539/tenor.gif?itemid=15538476', 'https://media.tenor.co/images/179249ffb72b03093a6d0fe6ada397c8/tenor.gif',
  'https://www.genymama.com/uploads/1/1/3/9/113908711/pjmasks_orig.gif'];
     
   let randomLink=links[Math.floor(Math.random()*links.length)];
