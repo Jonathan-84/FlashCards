@@ -41,3 +41,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-width: 680px) and (orientation: landscape)  {
+  .card-columns {
+      column-count: 2;
+    }
+  }
+
+  /* #### Mobile Phones Portrait #### */
+@media screen and (max-width: 680px) and (orientation: portrait)  {
+  .card-columns {
+    column-count: 1;
+  }
+
+/* #### Tablet Portrait #### */
+  @media screen and (min-width: 680px) and (max-width: 1060px) and (orientation: portrait){
+    .card-columns {
+      column-count: 3;
+    }
+  }
+
+  /* #### Tablet Lanscape #### */
+  @media screen and (min-width: 680px) and (max-width: 1060px) and (orientation: landscape){
+    .card-columns {
+      column-count: 4;
+    }
+  }
+}

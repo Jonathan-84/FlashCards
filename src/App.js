@@ -4,6 +4,7 @@ import lowercase from './Pages/lowercase'
 import numbers from './Pages/numbers'
 import newaddition from './Pages/basicaddition'
 import newsubtraction from './Pages/basicsubtraction'
+import Sightwords from './Pages/sightwords'
 
 import Tracker from './Components/tracker'
 import Navbar from './Components/Navbar.js'
@@ -24,6 +25,7 @@ function App() {
          <Route exact path= {'/capital'} component={capital}/>
          <Route exact path= {'/lowercase'} component={lowercase}/>
          <Route exact path= {'/numbers'} component={numbers}/>
+         <Route exact path= {'/Sightwords'} component={Sightwords}/>
          <Route exact path= {'/newaddition'} component={newaddition}/>
          <Route exact path= {'/newsubtraction'} component={newsubtraction}/>
 
