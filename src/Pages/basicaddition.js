@@ -34,11 +34,14 @@ export default class newaddition extends Component {
       <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
   <div className="card-header text-center">Basic Addition</div>
   <div className="card-body ">
+  <div className='col  d-flex justify-content-center'>
+  <p>What is the sum? </p>
+  </div>
     <div className='d-flex justify-content-center'>
         <button title="Generate Random Number" onClick={this.generateNumbers}>Random Numbers</button> 
         </div>
         <h2 className='text-center'>{firstnumber} + {secondnumber}</h2>
-        <br></br>
+      
         <br></br>
    
         <div className='d-flex justify-content-center'>

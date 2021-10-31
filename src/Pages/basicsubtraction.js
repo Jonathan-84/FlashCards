@@ -50,12 +50,15 @@ export default class newsubtraction extends Component {
           <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
       <div className="card-header text-center">Basic Subtraction</div>
       <div className="card-body">
+      <div className='col  d-flex justify-content-center'>
+  <p>What is the difference? </p>
+  </div>
       <div className='d-flex justify-content-center'>
         <button title="Generate Random Number" onClick={this.generateNumbers}>Press Me</button>
         </div> 
-        <br></br>
-        <br></br>
         {subtraction}
+        
+        <br></br>
 <div className='d-flex justify-content-center'>
         <Subtraction random1={this.state.firstnumber} random2={this.state.secondnumber}></Subtraction>
      </div>

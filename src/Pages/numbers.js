@@ -31,6 +31,9 @@ export default class numbers extends Component {
   <div className="card-header text-center">Numbers</div>
   <div className="card-body">
   <div className='col  d-flex justify-content-center'>
+  <p>Can your child name the number? </p>
+  </div>
+  <div className='col  d-flex justify-content-center'>
         <button title="Generate Random Number" onClick={this.generateRandomNumber}>Press Me</button> 
        
        </div>

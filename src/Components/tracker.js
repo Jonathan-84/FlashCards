@@ -80,6 +80,7 @@ reset = () => {
   }
   };
 
+
   render() {
 
 
@@ -167,6 +168,7 @@ reset = () => {
         <div className='mb-0'>
             <div className="col d-flex justify-content-center mt-3 ">
             <div className=" card text-white bg-warning mb-1 d-flex justify-content-center col col-md-4" >
+              
             <p className='text-center'>Correct = (<i className="bi bi-check-lg"></i>) Incorrect = (<i className="bi bi-x-lg"></i>).
        Reset = (<i className="bi bi-trash"></i>) </p>
             <br></br>

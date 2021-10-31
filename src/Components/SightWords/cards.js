@@ -27,7 +27,7 @@ function Cards (props){
     </FrontSide>
     <BackSide>
       <div className='d-flex justify-content-center'>
- <p> {props.sentence}</p>
+ <p > {props.sentence}</p>
  </div>
  </BackSide>
  </div>
