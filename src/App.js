@@ -5,7 +5,7 @@ import numbers from './Pages/numbers'
 import newaddition from './Pages/basicaddition'
 import newsubtraction from './Pages/basicsubtraction'
 import Sightwords from './Pages/sightwords'
-
+import Footer from './Components/Footer.js'
 import Tracker from './Components/tracker'
 import Navbar from './Components/Navbar.js'
 import React from 'react';
@@ -33,7 +33,7 @@ function App() {
          <Route render={() => <Redirect to={'/home'} />} />
  
           </Switch>
-       {/* <Footer/> */}
+       <Footer/>
   
         </>
       </HashRouter>

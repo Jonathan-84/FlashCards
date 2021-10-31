@@ -9,7 +9,7 @@ function Navbar(){
   
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
 <h2>
-                      <Link to={"/Home"} className=" navbar-brand nav-text nav-link"> FlashCards</Link>
+                      <Link to={"/Home"} className=" font-weight-bold navbar-brand nav-text nav-link"> FlashCards</Link>
                       </h2> 
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>

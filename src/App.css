@@ -17,6 +17,26 @@
   font-size: 2em;
 }
 
+.footer {
+  bottom: 0;
+  
+}
+
+.footer-container {
+
+  width: 100%;
+  /*margin: 0 auto;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position:fixed;
+  bottom:0;
+}
+
+.footer-size {
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
