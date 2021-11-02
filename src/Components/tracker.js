@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Genie from '../Assets/genie.gif';
 
 /// look to remove the http for the gifs, it seem slike it may be causing an issue, it may
 ///be more secure then as well
@@ -100,7 +99,7 @@ reset = () => {
       <>
           <p className='text-center font-weight-bold Congrats-font'>You've Reached 10 Points!!!!</p>
           
-      <img src={Genie}className="img-fluid" alt="Genie Congratulations"></img>
+      <img src='https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/genie.gif' className="img-fluid" alt="Genie Congratulations"></img>
       </>
       )
     }
