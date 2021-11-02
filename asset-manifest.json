@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/FlashCards/static/css/main.7a7ef9a0.chunk.css",
-    "main.js": "/FlashCards/static/js/main.269c0c87.chunk.js",
-    "main.js.map": "/FlashCards/static/js/main.269c0c87.chunk.js.map",
+    "main.js": "/FlashCards/static/js/main.b4532c00.chunk.js",
+    "main.js.map": "/FlashCards/static/js/main.b4532c00.chunk.js.map",
     "runtime-main.js": "/FlashCards/static/js/runtime-main.2d4c77c3.js",
     "runtime-main.js.map": "/FlashCards/static/js/runtime-main.2d4c77c3.js.map",
     "static/js/2.1e01e0df.chunk.js": "/FlashCards/static/js/2.1e01e0df.chunk.js",
@@ -12,12 +12,12 @@
     "index.html": "/FlashCards/index.html",
     "static/css/main.7a7ef9a0.chunk.css.map": "/FlashCards/static/css/main.7a7ef9a0.chunk.css.map",
     "static/js/2.1e01e0df.chunk.js.LICENSE.txt": "/FlashCards/static/js/2.1e01e0df.chunk.js.LICENSE.txt",
-    "static/media/genie.c90f86bb.gif": "/FlashCards/static/media/genie.c90f86bb.gif"
+    "static/media/genie.3bd27ce8.gif": "/FlashCards/static/media/genie.3bd27ce8.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.2d4c77c3.js",
     "static/js/2.1e01e0df.chunk.js",
     "static/css/main.7a7ef9a0.chunk.css",
-    "static/js/main.269c0c87.chunk.js"
+    "static/js/main.b4532c00.chunk.js"
   ]
 }
