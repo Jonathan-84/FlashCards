@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "FlashCards",
+  
+  "name": "Early Learning FlashCards",
   "icons": [
     {
       "src": "favicon.ico",
