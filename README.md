@@ -45,9 +45,13 @@ This is a web application that can be visited [here](https://jonathan-84.github.
 * Font Awesome
 
 ## Screenshots
-![Desktop Screen](https://raw.githubusercontent.com/Jonathan-84/HelloSpace/master/src/Assets/Images/HelloSpaceDesktop.jpg)
-![Mobile Screen](https://raw.githubusercontent.com/Jonathan-84/HelloSpace/master/src/Assets/Images/HelloSpace%20Mobile.jpg)
-![Tablet Screen- Landscape](https://raw.githubusercontent.com/Jonathan-84/HelloSpace/master/src/Assets/Images/HelloSpaceTableyLandscape.jpg)
+![Desktop- Math](https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/Math-Screen.jpg)
+![Desktop- Capitals](https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/Capital%20Letter%20Screen.jpg)
+![Desktop- Sight Words](https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/Sight%20Words-%20full.jpg)
+![Mobile- Sight Words](https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/Sight-%20Mobile.jpg)
+![Desktop- Tracker with Gif](https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/Tracker%20with%20Gif-%20screen.jpg)
+
+
 
 ## Gifs
 I want to give credit, where credit is due. Since this app is intended for children, I wanted to better control the source though and send them to a link where content could eventually change. So here they are for now: [Animated Ghostbusters](https://media1.tenor.com/images/1d80a4d408ae2264af736cd62d70d0ff/tenor.gif?itemid=4811418),[Mickey Great](http://www.clipartsuggest.com/images/601/great-work-clipart-cliparthut-free-clipart-HRW5vv-clipart.gif),[Bluey Floss](https://media1.tenor.com/images/0762c5d136b4574a7031a5e236233a09/tenor.gif?itemid=14357666),[Mickey Good](https://media1.tenor.com/images/9ac3cb9c126400a33ec7ad9c80f90539/tenor.gif?itemid=15538476), [Minion](https://media.tenor.co/images/179249ffb72b03093a6d0fe6ada397c8/tenor.gif),
