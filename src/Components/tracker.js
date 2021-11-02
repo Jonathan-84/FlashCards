@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Genie from '../Assets/genie.gif';
 
 /// look to remove the http for the gifs, it seem slike it may be causing an issue, it may
 ///be more secure then as well
@@ -89,6 +90,7 @@ reset = () => {
     
     let top;
     if (count === 10) {
+      alert("Congrats you've reached 10 points. Now click reset and do it again!");
       top =(
         // Like many, Robin Williams gave me years of laughs and amazing childhood memories (from his roles)
         //Unfortunately like many, he gave his all to others but struggled himself
@@ -97,8 +99,8 @@ reset = () => {
         // you found this hidden message, so take a care of yourself
       <>
           <p className='text-center font-weight-bold Congrats-font'>You've Reached 10 Points!!!!</p>
-      <img src="https://images.gr-assets.com/hostedimages/1549287369ra/27013190.gif" className="img-fluid" alt="Genie Congratulations"></img>
-  
+          
+      <img src={Genie}className="img-fluid" alt="Genie Congratulations"></img>
       </>
       )
     }
@@ -169,7 +171,7 @@ reset = () => {
             <div className="col d-flex justify-content-center mt-3 ">
             <div className=" card text-white bg-warning mb-1 d-flex justify-content-center col col-md-4" >
               
-            <p className='text-center'>Correct = (<i className="bi bi-check-lg"></i>) Incorrect = (<i className="bi bi-x-lg"></i>).
+            <p className='text-center'>Correct = (<i className="bi bi-check-lg"></i>) Incorrect = (<i className="bi bi-x-lg"></i>)
        Reset = (<i className="bi bi-trash"></i>) </p>
             <br></br>
              <div className="progress">  

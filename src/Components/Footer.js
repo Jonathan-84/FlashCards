@@ -6,6 +6,7 @@ function Footer() {
       <>
       <br></br>
       <br></br>
+      <br></br>
 <div className='footer'>
     <div className="footer-container bg-light pt-3" >  
 
