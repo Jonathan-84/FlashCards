@@ -1,4 +1,5 @@
 import React from 'react';
+import QRcode from '../Assets/FlashCards.png'
 
 
 
@@ -9,6 +10,15 @@ function Home(){
         <>
         <br></br>
         <br></br>
+
+        <div class="media">
+  <img class="align-self-center mr-3" src={QRcode} alt="QR code to reach this website"/>
+  <div class="media-body">
+    <h5 class="mt-0">Center-aligned media</h5>
+    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p class="mb-0">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+  </div>
+</div>
         <div className='col'>
         
 <h2 className='text-center'>FlashCards</h2>
@@ -28,10 +38,18 @@ function Home(){
     
     The goal of this simple site was to give repeatable practice opportunities and make it fun.
 </p>
+</div>
 <br></br>
+<div className='col'>
+        <div className="alert alert-primary text-center" role="alert">
+  Future Updates: Convert to a Progressive Web App and the ability to input answers which will instantly
+  be graded and move tracker... to start.
+  the line. 
+</div>
+</div>
 <br></br>
 
-</div>
+
 </div>
 </>
     )
