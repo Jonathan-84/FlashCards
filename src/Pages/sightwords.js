@@ -1,9 +1,9 @@
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import cardimage from '../Assets/Sight Words- full.jpg'; // gives image path
 
 
-import Words from '../Components/SightWords/wordlist';
-import Cards from '../Components/SightWords/cards';
  
 export default class SightWords extends Component {
 
@@ -18,23 +18,25 @@ export default class SightWords extends Component {
       {/*Text Container*/}      
       <div className="rounded text-white bg-info text-center sight-title">
     <h1 className=""> Sight Words </h1>
-    <p>Click each card to flip them over and see a sample sentence. Before flipping it over, 
-      see if your child can recognize the word and provide their own sentence example. </p>
       </div>
       </div>
    
 <br></br>
-
-     
-<div class="card-columns p-3">
-{Words.map((e)=>{
-       return (
-       <Cards word={e.word} sentence={e.sentence}/>
-     );})}
-        </div>
-     </div>
-
-
+<div className="container-fluid col-7 p-1 ">
+<div className=" row d-flex justify-content-center align-items-center">
+  <div className='col-md'>
+<h2 className='text-center'>Study Cards</h2>
+<Link to={"/sightcards"} className="nav-text"><img  alt="screenshot of card format" src={cardimage}  className="sightcard"/>
+  </Link>
+  </div>
+  <div className='col-md'>
+<h2 className='text-center'>Sight Word Test</h2>
+<Link to={"/sightrandom"} className="nav-text"><img  alt="screenshot of random test" src={cardimage}  className="sightcard"/>
+  </Link>
+  </div>
+</div>
+</div>
+</div>
 
 </>
   )

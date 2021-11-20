@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+.sightcard {
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  flex-grow: 1;
+}
+
 .sight-title {
   padding: 5px 85px 5px 85px;
 

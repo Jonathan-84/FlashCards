@@ -8,6 +8,8 @@ import Sightwords from './Pages/sightwords'
 import Footer from './Components/Footer.js'
 import Tracker from './Components/tracker'
 import Navbar from './Components/Navbar.js'
+import SightCards from './Components/SightWords/sightcards';
+import sightrandom from './Components/SightWords/randomizer';
 import React from 'react';
 import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import './App.css';
@@ -26,7 +28,9 @@ function App() {
          <Route exact path= {'/capital'} component={capital}/>
          <Route exact path= {'/lowercase'} component={lowercase}/>
          <Route exact path= {'/numbers'} component={numbers}/>
-         <Route exact path= {'/Sightwords'} component={Sightwords}/>
+         <Route exact path= {'/sightwords'} component={Sightwords}/>
+         <Route exact path= {'/sightcards'} component={SightCards}/>
+         <Route exact path= {'/sightrandom'} component={sightrandom}/>
          <Route exact path= {'/newaddition'} component={newaddition}/>
          <Route exact path= {'/newsubtraction'} component={newsubtraction}/>
 
