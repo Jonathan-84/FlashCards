@@ -28,12 +28,12 @@ function Navbar(){
           
                    
                 <ul className="nav-item dropdown">
-        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/#"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/sightwords"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Sight Words
         </Link>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <ul>
-                <Link to={"/sightwords"} className="nav-text">Study Cards</Link>
+                <Link to={"/sightcards"} className="nav-text">Study Cards</Link>
                 </ul>
                 <ul>
                   <Link to={"/sightrandom"}className="nav-text">Test</Link>
