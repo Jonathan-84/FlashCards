@@ -23,11 +23,24 @@ function Navbar(){
                 <Link to={"/lowercase"} className="nav-text">Lower Case Letter Test</Link>
                 </ul>
                 <ul>
-                <Link to={"/sightwords"} className="nav-text">Sight Words</Link>
-                </ul>
-                <ul>
                   <Link to={"/numbers"}className="nav-text">Number Test</Link>
                 </ul>
+          
+                   
+                <ul className="nav-item dropdown">
+        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/#"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sight Words
+        </Link>
+        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <ul>
+                <Link to={"/sightwords"} className="nav-text">Study Cards</Link>
+                </ul>
+                <ul>
+                  <Link to={"/sightrandom"}className="nav-text">Test</Link>
+               </ul>
+                  </div>
+      </ul>
+   
                
                 <ul className="nav-item dropdown">
         <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/#"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
