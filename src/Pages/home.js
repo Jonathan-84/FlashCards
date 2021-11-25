@@ -14,8 +14,8 @@ function Home(){
 <h2 className='text-center'>FlashCards</h2>
 <div className='col '>
         <div className="alert alert-primary text-center" role="alert">
-  Future Updates: Convert to a Progressive Web App and the ability to input answers which will instantly
-  be graded and move the tracker. More topics will be added, after all, I created this as an aid for my kids as well.
+  Updates: The app is now a PWA, so you can now download the app for offline use but the gifs will not appear.
+  Future updates still include automatic grading (when possible), performance improvements, and eventually more topics.
 </div>
 </div>
 <br></br>

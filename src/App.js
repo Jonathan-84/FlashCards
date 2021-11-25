@@ -34,7 +34,7 @@ function App() {
          <Route exact path= {'/newaddition'} component={newaddition}/>
          <Route exact path= {'/newsubtraction'} component={newsubtraction}/>
 
-        {/*}  <Route exact path= {'/mars'} component={Mars}/>  */}
+       
          <Route render={() => <Redirect to={'/home'} />} />
  
           </Switch>
