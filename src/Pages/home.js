@@ -5,12 +5,21 @@ import React from 'react';
 
 function Home(){
 
+
+  const greetingText = () => {
+    let currentDate = new Date();
+let time = currentDate.getHours() + ":" + currentDate.getMinutes();
+    console.log(time)
+    if (time >= 12 && time <=17) return "Good Afternoon! "
+    else if (time >= 18) return "Good Evening! "
+    else return "Good Morning! "
+  }
+
     return (
         <>
         <br></br>
         <br></br>
         <div className='col'>
-        
 <h2 className='text-center'>FlashCards</h2>
 <div className='col '>
         <div className="alert alert-primary text-center" role="alert">
@@ -20,7 +29,7 @@ function Home(){
 </div>
 <br></br>
 <div className="d-flex mt-auto justify-content-center">
-<p> This simple to use site will help early learners practice their letters, numbers, and math. Following each 
+<p> {greetingText()} This simple to use site will help early learners practice their letters, numbers, and math. Following each 
     answer attempt by your child, update the answer tracker above. 
     <br></br>
     <br></br>
