@@ -8,10 +8,10 @@ function Home(){
 
   const greetingText = () => {
     let currentDate = new Date();
-let time = currentDate.getHours() + ":" + currentDate.getMinutes();
-    console.log(time)
-    if (time >= 12 && time <=17) return "Good Afternoon! "
-    else if (time >= 18) return "Good Evening! "
+let hour = currentDate.getHours();
+    console.log(hour)
+    if (hour >= 12 && hour <=17) return "Good Afternoon! "
+    else if (hour >= 18) return "Good Evening! "
     else return "Good Morning! "
   }
 
