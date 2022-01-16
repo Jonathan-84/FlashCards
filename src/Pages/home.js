@@ -37,7 +37,7 @@ let hour = currentDate.getHours();
          <ul>
            <li>If they answer correctly, click the [✔️] and they will be rewarded with a fun gif. </li>
            <li>For each incorrect answer, click the [✖️] and they will slide back on the scale by 1.</li>
-           <li>If they reach 10 points, they will a special gif.  </li>
+           <li>If they reach 10 points, they will unlock a special gif.  </li>
          </ul>
          </span>
     
