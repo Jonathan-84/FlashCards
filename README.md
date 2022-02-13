@@ -9,6 +9,7 @@ After his teacher continued to kindly send practice sheet, after practice sheet 
 + Identify random lower case Letters
 + Identify random numbers (0-20)
 + Basic Addition (generate random numbers 0-10) then allow them to click the button to check their answers.
++ Intermediate Addition (generate random numbers 0-100 and a second set 1-10) then allow them to click the button to check their answers.
 + Basic Subtraction (generate random numbers 0-10) then allow them to click the button to check their answers. * To keep it basic, the difference will never be a negative number.
 
 🎁 Motivation:
