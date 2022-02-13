@@ -51,6 +51,9 @@ function Navbar(){
                   <Link to={"/newaddition"}className="nav-text">Beginner Addition</Link>
                 </ul>
                 <ul>
+                  <Link to={"/interaddition"}className="nav-text">Intermediate Addition</Link>
+                </ul>
+                <ul>
                   <Link to={"/newsubtraction"}className="nav-text">Beginner Subtraction</Link>
                </ul>
                   </div>

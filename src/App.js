@@ -3,6 +3,7 @@ import capital from './Pages/capitalletters'
 import lowercase from './Pages/lowercase'
 import numbers from './Pages/numbers'
 import newaddition from './Pages/basicaddition'
+import interaddition from './Pages/interaddition.js'
 import newsubtraction from './Pages/basicsubtraction'
 import Sightwords from './Pages/sightwords'
 import Footer from './Components/Footer.js'
@@ -32,6 +33,7 @@ function App() {
          <Route exact path= {'/sightcards'} component={SightCards}/>
          <Route exact path= {'/sightrandom'} component={sightrandom}/>
          <Route exact path= {'/newaddition'} component={newaddition}/>
+         <Route exact path= {'/interaddition'} component={interaddition}/>
          <Route exact path= {'/newsubtraction'} component={newsubtraction}/>
 
        
