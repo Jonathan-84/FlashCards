@@ -15,7 +15,9 @@ export default class Tracker extends Component {
   randomKudos = ()=> {
     var links = ['https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/Blueyfloss.gif','https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/MickeyGood.gif','https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/MickeyGreat.gif','https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/PJMasks.gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/animatedGB.gif',
  'https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/minions.gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/TMNT.gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/kermit.gif',
-'https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/olaf.gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/stevie.gif'];
+'https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/olaf.gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/feature/pwa/src/Assets/200.gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/feature/pwa/src/Assets/b4b41b29987519.5620e8a676a61.gif',
+ 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/master/src/Assets/stevie.gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/feature/pwa/src/Assets/enjoying-the-ride-grogu.gif',
+'https://raw.githubusercontent.com/Jonathan-84/FlashCards/feature/pwa/src/Assets/giphy%20(1).gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/feature/pwa/src/Assets/tenor.gif', 'https://raw.githubusercontent.com/Jonathan-84/FlashCards/feature/pwa/src/Assets/tumblr_13eef5b3d3c1791ccac51bc651bd6366_b48f03ae_540.gif'];
     
   let randomLink=links[Math.floor(Math.random()*links.length)];
   this.setState({
