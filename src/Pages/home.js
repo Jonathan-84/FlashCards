@@ -23,7 +23,8 @@ let hour = currentDate.getHours();
 <h2 className='text-center'>FlashCards</h2>
 <div className='col '>
         <div className="alert alert-primary text-center" role="alert">
-  Updates: The app is now a PWA, so you can now download the app for offline use but the gifs will not appear.
+  Updates: The app is now a PWA, includes addition for larger numbers (0-100 for one set of numbers) and multiplication of numbers 0-10.
+  New gifs have been added. 
   Future updates still include automatic grading (when possible), performance improvements, and eventually more topics.
 </div>
 </div>
