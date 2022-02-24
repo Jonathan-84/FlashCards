@@ -11,40 +11,45 @@ function Footer() {
       
 <div className='footer'>
     <div className="footer-container bg-light pt-3" >  
-    <div class="row d-flex align-items-center ">
+
 
       {/* This is the Me Buttons*/} 
       <div className='col  '>
-      <div>
-<a className='footer-text text-dark font-weight-bold' href="https://github.com/Jonathan-84" target="_blank" rel='noreferrer'>GitHub <span className="fa fa-github">
+      <div className='row '>
+      <div className='col d-flex justify-content-around '>
+<a className='text-dark self-promo font-weight-bold' href="https://github.com/Jonathan-84" target="_blank" rel='noreferrer'>GitHub <span className="fa fa-github">
     </span></a>
     </div>
-<div>
-<a className='footer-text text-dark font-weight-bold' href="https://www.linkedin.com/in/jrob84" target="_blank" rel='noreferrer'>LinkedIn <span className="fa fa-linkedin-square"></span></a>
+    <div className='col  '>
+
+<a className=' text-dark self-promo font-weight-bold' href="https://www.linkedin.com/in/jrob84" target="_blank" rel='noreferrer'>LinkedIn <span className="fa fa-linkedin-square"></span></a>
+</div>
+
 </div>
 </div>
+
 
      {/* This is the Quick Nav Section*/}
-     <div class="row d-flex justify-content-around  ">
-     <div className='col d-flex justify-content-around'>
+ 
+     <div className='col d-flex flex-column justify-content-around  flex-md-row'>
          <div>
-      <Link to={"/letters"} class="secondary">Letters</Link>
+      <Link to={"/letters"} class="text-secondary">Letters</Link>
       </div>
       <div>
-      <Link  to={"/numbers"} class="secondary">Numbers</Link>
+      <Link  to={"/numbers"} class="text-secondary">Numbers</Link>
       </div>
       <div>
-      <Link to={"/sightwords"} class="secondary">Sightwords</Link>
+      <Link to={"/sightwords"} class="text-secondary">Sightwords</Link>
       </div>
       <div>
-      <Link  to={"/math"} class="secondary">Math</Link>
+      <Link  to={"/math"} class="text-secondary">Math</Link>
       </div>
       </div>
 
-      </div>
+  
 </div>
 </div>
-</div>
+
 </>    
     )
     
