@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Subtraction from '../Components/Subtraction';
+import Subtraction from './Subtraction';
 
-export default class newsubtraction extends Component {
+export default class sub1 extends Component {
 
   constructor() {
     super();
@@ -48,7 +48,7 @@ export default class newsubtraction extends Component {
        <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
           <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
-      <div className="card-header text-center">Basic Subtraction</div>
+      <div className="card-header text-center">Level 1 Subtraction</div>
       <div className="card-body">
       <div className='col  d-flex justify-content-center'>
   <p>What is the difference? </p>
@@ -66,6 +66,8 @@ export default class newsubtraction extends Component {
   </div>
   </div>
   </div>
+  <br></br>
+  <br></br>
   </>
       );
     }

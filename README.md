@@ -7,9 +7,12 @@ After his teacher continued to kindly send practice sheet, after practice sheet 
 📚 Current Practice Opportunities:
 + Identify random Capital Letters
 + Identify random lower case Letters
-+ Identify random numbers (0-20)
-+ Basic Addition (generate random numbers 0-10) then allow them to click the button to check their answers.
-+ Basic Subtraction (generate random numbers 0-10) then allow them to click the button to check their answers. * To keep it basic, the difference will never be a negative number.
++ Identify random numbers- Level 1 (0-20)
++ Identify random numbers- Level 2 (0-100)
++ Addition Level 1 (generate random numbers 0-10) then allow them to click the button to check their answers.
++ Addition Level 2 (generate random numbers 0-100 and add a number between 0-10) then allow them to click the button to check their answers.
++ Subtraction Level 1 (generate random numbers 0-10) then allow them to click the button to check their answers. * To keep it basic, I've set it so the difference will never be a negative number.
++ Multiplication Level 1 (generate random numbers 0-10) then allow them to click the button to check their answers.
 
 🎁 Motivation:
 + In basic testing, simply clicking the buttons appeared fun

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Addition from '../Components/Addition';
+import Multiplication from './Multiplication';
 
 
-export default class interaddition extends Component {
+export default class multi1 extends Component {
 
   constructor() {
     super();
@@ -15,7 +15,7 @@ export default class interaddition extends Component {
   }
 
   generateNumbers = () => {
-    var randomNumber1 = Math.floor(Math.random() * 100) + 1;
+    var randomNumber1 = Math.floor(Math.random() * 10) + 1;
     var randomNumber2 = Math.floor(Math.random() * 10) + 1;
 
 
@@ -32,25 +32,27 @@ export default class interaddition extends Component {
    <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
       <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
-  <div className="card-header text-center">Intermediate Addition</div>
+  <div className="card-header text-center">Level 1 Multiplication</div>
   <div className="card-body ">
   <div className='col  d-flex justify-content-center'>
-  <p>What is the sum? </p>
+  <p>What is the product? </p>
   </div>
     <div className='d-flex justify-content-center'>
         <button title="Generate Random Number" onClick={this.generateNumbers}>Random Numbers</button> 
         </div>
-        <h2 className='text-center'>{firstnumber} + {secondnumber}</h2>
+        <h2 className='text-center'>{firstnumber} x {secondnumber}</h2>
       
         <br></br>
    
         <div className='d-flex justify-content-center'>
-           <Addition first={this.state.firstnumber} second={this.state.secondnumber}></Addition>
+           <Multiplication first={this.state.firstnumber} second={this.state.secondnumber}></Multiplication>
            </div>
            </div>
            </div>
            </div>
   </div>
+  <br></br>
+  <br></br>
   </>
       );
     }

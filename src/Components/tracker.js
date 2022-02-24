@@ -92,7 +92,7 @@ reset = () => {
     
     let top;
     if (count === 10) {
-      alert("Congrats you've reached 10 points. Now click reset and do it again!");
+      alert("Congrats you've reached 10 points. You should consider leveling up! Now click reset and keep doing an awesome job!");
       top =(
         // Like many, Robin Williams gave me years of laughs and amazing childhood memories (from his roles)
         //Unfortunately like many, he gave his all to others but struggled himself

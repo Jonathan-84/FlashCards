@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Addition from '../Components/Addition';
+import Addition from './Addition';
 
 
-export default class newaddition extends Component {
+export default class add2 extends Component {
 
   constructor() {
     super();
@@ -15,7 +15,7 @@ export default class newaddition extends Component {
   }
 
   generateNumbers = () => {
-    var randomNumber1 = Math.floor(Math.random() * 10) + 1;
+    var randomNumber1 = Math.floor(Math.random() * 100) + 1;
     var randomNumber2 = Math.floor(Math.random() * 10) + 1;
 
 
@@ -32,7 +32,7 @@ export default class newaddition extends Component {
    <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
       <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
-  <div className="card-header text-center">Basic Addition</div>
+  <div className="card-header text-center">Level 2 Addition</div>
   <div className="card-body ">
   <div className='col  d-flex justify-content-center'>
   <p>What is the sum? </p>
@@ -51,6 +51,8 @@ export default class newaddition extends Component {
            </div>
            </div>
   </div>
+  <br></br>
+  <br></br>
   </>
       );
     }

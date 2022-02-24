@@ -31,6 +31,7 @@ export default class lowercase extends Component {
       const {lowercaseHolder} = this.state;
       
       return (
+        <>
         <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
 
@@ -52,6 +53,9 @@ export default class lowercase extends Component {
   </div>
   </div>
   </div>
+  <br></br>
+  <br></br>
+  </>
       );
     }
   }

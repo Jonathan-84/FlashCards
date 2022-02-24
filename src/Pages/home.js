@@ -21,15 +21,16 @@ let hour = currentDate.getHours();
         <br></br>
         <div className='col'>
 <h2 className='text-center'>FlashCards</h2>
-<div className='col '>
+<br></br>
+<div className='row d-flex justify-content-center'>
+<div className='col-6 d-flex justify-content-center'>
         <div className="alert alert-primary text-center" role="alert">
-  Updates: The app is now a PWA, includes addition for larger numbers (0-100 for one set of numbers) and multiplication of numbers 0-10.
-  New gifs have been added. 
-  Future updates still include automatic grading (when possible), performance improvements, and eventually more topics.
+  Updates have moved to the About tab.
+  </div>
 </div>
 </div>
 <br></br>
-<div className="d-flex mt-auto justify-content-center">
+<div className="mx-4">
 <p> {greetingText()} This simple to use site will help early learners practice their letters, numbers, and math. Following each 
     answer attempt by your child, update the answer tracker above. 
     <br></br>
@@ -69,6 +70,8 @@ scan this QR code. </p>
 
 
 </div>
+<br></br>
+  <br></br>
 </>
     )
     };
