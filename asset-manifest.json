@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/FlashCards/static/css/main.5a8f4d09.chunk.css",
-    "main.js": "/FlashCards/static/js/main.8cc30e5b.chunk.js",
-    "main.js.map": "/FlashCards/static/js/main.8cc30e5b.chunk.js.map",
+    "main.css": "/FlashCards/static/css/main.47ecacc0.chunk.css",
+    "main.js": "/FlashCards/static/js/main.0de272f1.chunk.js",
+    "main.js.map": "/FlashCards/static/js/main.0de272f1.chunk.js.map",
     "runtime-main.js": "/FlashCards/static/js/runtime-main.9ea13e92.js",
     "runtime-main.js.map": "/FlashCards/static/js/runtime-main.9ea13e92.js.map",
-    "static/js/2.ddfe0f18.chunk.js": "/FlashCards/static/js/2.ddfe0f18.chunk.js",
-    "static/js/2.ddfe0f18.chunk.js.map": "/FlashCards/static/js/2.ddfe0f18.chunk.js.map",
+    "static/js/2.88438313.chunk.js": "/FlashCards/static/js/2.88438313.chunk.js",
+    "static/js/2.88438313.chunk.js.map": "/FlashCards/static/js/2.88438313.chunk.js.map",
     "index.html": "/FlashCards/index.html",
-    "static/css/main.5a8f4d09.chunk.css.map": "/FlashCards/static/css/main.5a8f4d09.chunk.css.map",
-    "static/js/2.ddfe0f18.chunk.js.LICENSE.txt": "/FlashCards/static/js/2.ddfe0f18.chunk.js.LICENSE.txt",
-    "static/media/FullSightTest.e800cb84.jpg": "/FlashCards/static/media/FullSightTest.e800cb84.jpg",
-    "static/media/Sight Words- full.55f1a155.jpg": "/FlashCards/static/media/Sight Words- full.55f1a155.jpg"
+    "static/css/main.47ecacc0.chunk.css.map": "/FlashCards/static/css/main.47ecacc0.chunk.css.map",
+    "static/js/2.88438313.chunk.js.LICENSE.txt": "/FlashCards/static/js/2.88438313.chunk.js.LICENSE.txt",
+    "static/media/AddLvl1.c10f0cef.jpg": "/FlashCards/static/media/AddLvl1.c10f0cef.jpg",
+    "static/media/AddLvl2.c37c02ed.jpg": "/FlashCards/static/media/AddLvl2.c37c02ed.jpg",
+    "static/media/Capital.7c7f9a27.jpg": "/FlashCards/static/media/Capital.7c7f9a27.jpg",
+    "static/media/FullSightTest.a4414392.jpg": "/FlashCards/static/media/FullSightTest.a4414392.jpg",
+    "static/media/Lowercase.ca52eda0.jpg": "/FlashCards/static/media/Lowercase.ca52eda0.jpg",
+    "static/media/MultLvl1.c39d545d.jpg": "/FlashCards/static/media/MultLvl1.c39d545d.jpg",
+    "static/media/NumberLvl1.71396950.jpg": "/FlashCards/static/media/NumberLvl1.71396950.jpg",
+    "static/media/NumbersLvl2.ed56e9bf.jpg": "/FlashCards/static/media/NumbersLvl2.ed56e9bf.jpg",
+    "static/media/Sight Words- full.55f1a155.jpg": "/FlashCards/static/media/Sight Words- full.55f1a155.jpg",
+    "static/media/SubLvl1.b68f06aa.jpg": "/FlashCards/static/media/SubLvl1.b68f06aa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9ea13e92.js",
-    "static/js/2.ddfe0f18.chunk.js",
-    "static/css/main.5a8f4d09.chunk.css",
-    "static/js/main.8cc30e5b.chunk.js"
+    "static/js/2.88438313.chunk.js",
+    "static/css/main.47ecacc0.chunk.css",
+    "static/js/main.0de272f1.chunk.js"
   ]
 }
