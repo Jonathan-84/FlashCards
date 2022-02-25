@@ -33,8 +33,8 @@ Level 2 added for Addition, Numbers, and Level 1 added for Multiplication. New g
         
 <div className="d-flex mt-auto justify-content-center">
 <p> {greetingText()}I'm not an educator... I'm a dad! With a young son in Kindergarten, I'm very involved with his education. 
-That involvement continued when my son showed a desire to cover more advanced content than covered in class.
-While he an his friends have focused on the building blocks of reading (letter recognition and sight words), he has also been practicing
+That involvement continued when my son was interested in advancing ahead in the curriculum.
+While he an his friends have focused on the building blocks of reading (letter recognition and sight words), he was already practicing
  basic addition and reading at home.
 
 After his teacher continued to kindly send practice sheet, after practice sheet home, I announced to my wife, "that I could build something that does the same thing". 
