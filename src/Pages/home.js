@@ -5,22 +5,33 @@ import React from 'react';
 
 function Home(){
 
+
+  const greetingText = () => {
+    let currentDate = new Date();
+let hour = currentDate.getHours();
+    console.log(hour)
+    if (hour >= 12 && hour <=17) return "Good Afternoon! "
+    else if (hour >= 18) return "Good Evening! "
+    else return "Good Morning! "
+  }
+
     return (
         <>
         <br></br>
         <br></br>
         <div className='col'>
-        
 <h2 className='text-center'>FlashCards</h2>
-<div className='col '>
+<br></br>
+<div className='row d-flex justify-content-center'>
+<div className='col-6 d-flex justify-content-center'>
         <div className="alert alert-primary text-center" role="alert">
-  Future Updates: Convert to a Progressive Web App and the ability to input answers which will instantly
-  be graded and move the tracker. More topics will be added, after all, I created this as an aid for my kids as well.
+  Updates have moved to the About tab.
+  </div>
 </div>
 </div>
 <br></br>
-<div className="d-flex mt-auto justify-content-center">
-<p> This simple to use site will help early learners practice their letters, numbers, and math. Following each 
+<div className="mx-4">
+<p> {greetingText()} This simple to use site will help early learners practice their letters, numbers, and math. Following each 
     answer attempt by your child, update the answer tracker above. 
     <br></br>
     <br></br>
@@ -28,7 +39,7 @@ function Home(){
          <ul>
            <li>If they answer correctly, click the [✔️] and they will be rewarded with a fun gif. </li>
            <li>For each incorrect answer, click the [✖️] and they will slide back on the scale by 1.</li>
-           <li>If they reach 10 points, they will a special gif.  </li>
+           <li>If they reach 10 points, they will unlock a special gif.  </li>
          </ul>
          </span>
     
@@ -59,6 +70,8 @@ scan this QR code. </p>
 
 
 </div>
+<br></br>
+  <br></br>
 </>
     )
     };

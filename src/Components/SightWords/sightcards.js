@@ -32,8 +32,8 @@ export default class SightCards extends Component {
      );})}
         </div>
      </div>
-
-
+     <br></br>
+  <br></br>
 
 </>
   )

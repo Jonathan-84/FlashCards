@@ -1,18 +1,31 @@
+import React from 'react';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
+import './App.css';
+
+//Pages
 import Home from './Pages/home'
-import capital from './Pages/capitalletters'
-import lowercase from './Pages/lowercase'
-import numbers from './Pages/numbers'
-import newaddition from './Pages/basicaddition'
-import newsubtraction from './Pages/basicsubtraction'
-import Sightwords from './Pages/sightwords'
+import About from './Pages/About'
+import Math from './Pages/Math'
+import Letters from './Pages/Letters'
+import Numbers from './Pages/Numbers'
+import Sightwords from './Pages/Sightwords'
+
+
+/// Components
+import numbers1 from './Components/Numbers/numbers1'
+import numbers2 from './Components/Numbers/numbers2'
+import add1 from './Components/Math/add1'
+import add2 from './Components/Math/add2.js'
+import sub1 from './Components/Math/sub1'
+import multi1 from './Components/Math/multi1'
+import capital from './Components/Letters/capitalletters'
+import lowercase from './Components/Letters/lowercase'
 import Footer from './Components/Footer.js'
 import Tracker from './Components/tracker'
 import Navbar from './Components/Navbar.js'
 import SightCards from './Components/SightWords/sightcards';
 import sightrandom from './Components/SightWords/randomizer';
-import React from 'react';
-import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
-import './App.css';
+
 
 
 
@@ -25,16 +38,23 @@ function App() {
        <Tracker />
           <Switch>
         <Route exact path= {'/home'} component={Home}/>
+        <Route exact path= {'/about'} component={About}/>
+        <Route exact path= {'/letters'} component={Letters}/>
          <Route exact path= {'/capital'} component={capital}/>
          <Route exact path= {'/lowercase'} component={lowercase}/>
-         <Route exact path= {'/numbers'} component={numbers}/>
+         <Route exact path= {'/numbers'} component={Numbers}/>
+         <Route exact path= {'/numbers1'} component={numbers1}/>
+         <Route exact path= {'/numbers2'} component={numbers2}/>
+         <Route exact path= {'/math'} component={Math}/>
          <Route exact path= {'/sightwords'} component={Sightwords}/>
          <Route exact path= {'/sightcards'} component={SightCards}/>
          <Route exact path= {'/sightrandom'} component={sightrandom}/>
-         <Route exact path= {'/newaddition'} component={newaddition}/>
-         <Route exact path= {'/newsubtraction'} component={newsubtraction}/>
+         <Route exact path= {'/add1'} component={add1}/>
+         <Route exact path= {'/multi1'} component={multi1}/>
+         <Route exact path= {'/add2'} component={add2}/>
+         <Route exact path= {'/sub1'} component={sub1}/>
 
-        {/*}  <Route exact path= {'/mars'} component={Mars}/>  */}
+       
          <Route render={() => <Redirect to={'/home'} />} />
  
           </Switch>

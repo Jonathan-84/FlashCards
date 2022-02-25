@@ -16,17 +16,36 @@ function Navbar(){
   </button>
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav">
-      <ul>
-                <Link to={"/capital"} className="nav-text">Capital Letter Test</Link>
+
+               <ul className="nav-item dropdown">
+        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/letters"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Letter Identification
+        </Link>
+        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <ul>
+                <Link to={"/capital"} className="nav-text">Capital Letter</Link>
                 </ul>
                 <ul>
-                <Link to={"/lowercase"} className="nav-text">Lower Case Letter Test</Link>
+                <Link to={"/lowercase"} className="nav-text">Lower Case Letter</Link>
+                </ul>
+                  </div>
+      </ul>
+
+                <ul className="nav-item dropdown">
+        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/numbers"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Number Identification
+        </Link>
+        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <ul>
+                <Link to={"/numbers1"} className="nav-text">Numbers: Level 1</Link>
                 </ul>
                 <ul>
-                  <Link to={"/numbers"}className="nav-text">Number Test</Link>
-                </ul>
-          
+                  <Link to={'/numbers2'}className="nav-text">Numbers: Level 2</Link>
+               </ul>
+                  </div>
+      </ul>
                    
+
                 <ul className="nav-item dropdown">
         <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/sightwords"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Sight Words
@@ -43,19 +62,32 @@ function Navbar(){
    
                
                 <ul className="nav-item dropdown">
-        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/#"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <Link className="nav-text dropdown-toggle" id="navbarDropdownMenuLink" to={"/math"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Math
         </Link>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <div className="dropdown-menu mx-auto" aria-labelledby="navbarDropdownMenuLink">
         <ul>
-                  <Link to={"/newaddition"}className="nav-text">Beginner Addition</Link>
+                  <Link to={"/add1"}className="nav-text">Addition: Level 1</Link>
                 </ul>
                 <ul>
-                  <Link to={"/newsubtraction"}className="nav-text">Beginner Subtraction</Link>
+                  <Link to={"/add2"}className="nav-text">Addition: Level 2</Link>
+                </ul>
+                <ul>
+                  <Link to={"/sub1"}className="nav-text">Subtraction: Level 1</Link>
+               </ul>
+               <ul>
+                  <Link to={"/multi1"}className="nav-text">Multiplication: Level 1</Link>
                </ul>
                   </div>
       </ul>
        </ul>
+
+       <ul className="navbar-nav">
+      <ul>
+                <Link to={"/about"} className="nav-text">About</Link>
+                </ul>
+            
+                </ul>
         </div>
   
 </nav>

@@ -1,13 +1,13 @@
 
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import num1 from '../Assets/NumberLvl1.jpg'; // gives image path
-import num2 from '../Assets/NumbersLvl2.jpg'; // gives image path
+import lower from '../Assets/Lowercase.jpg'; // gives image path
+import capital from '../Assets/Capital.jpg'; // gives image path
 
 ///// Need to update the images and clean up how I refer to sections
 /// also need to add the level 2 for number identification 0-100
  
-export default class Numbers extends Component {
+export default class Letters extends Component {
 
 
     
@@ -19,7 +19,7 @@ export default class Numbers extends Component {
     <div className="col d-flex justify-content-center mt-3 ">
       {/*Text Container*/}      
       
-    <h1 className="text-info"> Numbers </h1>
+    <h1 className="text-info"> Letters </h1>
     
       </div>
    
@@ -27,21 +27,21 @@ export default class Numbers extends Component {
 <div className="container-fluid col-7 p-1 ">
 <div className=" row d-flex justify-content-center align-items-center">
   <div className='col-md border bg-info rounded m-1'>
-<h2 className='text-center text-white h4'>Level 1</h2>
-<Link to={"/numbers1"} className="nav-text"><img width="400" height="300"  alt="screenshot of num 1" src={num1}  className="sightcard"/>
+<h2 className='text-center text-white h4'>Lowercase</h2>
+<Link to={"/lowercase"} className="nav-text"><img  width="400" height="300" alt="screenshot of lowerase" src={lower}  className="sightcard"/>
   </Link>
   <br></br>
   <br></br>
-  <p> Can your child identify the number between 0-20? </p>
+  <p> Can your child identify the lowercase letter? </p>
   
   </div>
   <div className='col-md border bg-info rounded m-1'>
-<h2 className='text-center text-white h4'>Level 2</h2>
-<Link to={'/numbers2'} className="nav-text"><img  width="400" height="300" alt="screenshot of num 2" src={num2}  className="sightcard"/>
+<h2 className='text-center text-white h4'>Uppercase</h2>
+<Link to={'/capital'} className="nav-text"><img  width="400" height="300" alt="screenshot of Capital" src={capital}  className="sightcard"/>
   </Link>
   <br></br>
   <br></br>
-  <p>  Can your child identify the number between 0-100? </p>
+  <p>  Can your child identify the uppercase letter?</p>
  </div>
 </div>
 </div>
