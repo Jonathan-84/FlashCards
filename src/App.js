@@ -7,8 +7,8 @@ import Home from './Pages/home'
 import About from './Pages/About'
 import Math from './Pages/Math'
 import Letters from './Pages/Letters'
-import Numbers from './Pages/Numbers'
-import Sightwords from './Pages/Sightwords'
+import Numbers from './Pages/numbers'
+import Sightwords from './Pages/sightwords'
 
 
 /// Components

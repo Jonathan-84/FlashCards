@@ -16,7 +16,7 @@ function Footer() {
       {/* This is the Me Buttons*/} 
       <div className='col  '>
       <div className='row '>
-      <div className='col d-flex justify-content-around '>
+      <div className='col d-flex flex-column justify-content-around  flex-md-row '>
 <a className='text-dark self-promo font-weight-bold' href="https://github.com/Jonathan-84" target="_blank" rel='noreferrer'>GitHub <span className="fa fa-github">
     </span></a>
     </div>
