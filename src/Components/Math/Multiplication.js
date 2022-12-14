@@ -15,7 +15,7 @@ export default class Multiplication extends Component {
   }
 
   
-  addNumbers = () => {
+  multiplyNumbers = () => {
     
     let first= this.props.first;
     let second= this.props.second;
@@ -24,9 +24,27 @@ export default class Multiplication extends Component {
     let answer= first * second
 
     this.setState({ result: answer })
-
-    console.log(answer)
   }
+
+  sayAnswer = () => {
+    
+    let first= this.props.first;
+    let second= this.props.second;
+  
+
+    let answer= first * second
+
+    if ('speechSynthesis' in window) {
+     }else{
+       alert("Sorry, your browser doesn't support text to speech!");
+     }
+
+     var msg = new SpeechSynthesisUtterance();
+     msg.text = first + "multiplied by" + second + "equals"+ answer;
+msg.voice = window.speechSynthesis.getVoices()[2];
+window.speechSynthesis.speak(msg);
+  }
+
 
 
 
@@ -37,7 +55,8 @@ export default class Multiplication extends Component {
     
     return (
    <div>
-        <button title="Generate Random Number" onClick={this.addNumbers}>Check the Answer</button> 
+        <button className='m-1' title="Generate Random Number" onClick={this.multiplyNumbers}>Check the Answer</button> 
+        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={this.sayAnswer}><span><i className="fa-solid fa-volume-high"></i></span></button>
        { <h2 className='text-center'>{result}</h2>}
         </div>
     );

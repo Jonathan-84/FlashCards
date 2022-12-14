@@ -14,6 +14,7 @@ export default class Addition extends Component {
     }
   }
 
+
   
   addNumbers = () => {
     
@@ -25,8 +26,31 @@ export default class Addition extends Component {
 
     this.setState({ result: answer })
 
-    console.log(answer)
   }
+
+  sayIt = () => {
+    
+    let first= this.props.first;
+    let second= this.props.second;
+  
+
+    let answer= first + second
+
+    this.setState({ result: answer })
+
+    if ('speechSynthesis' in window) {
+  
+     }else{
+    
+       alert("Sorry, your browser doesn't support text to speech!");
+     }
+
+     var msg = new SpeechSynthesisUtterance();
+msg.text = first + "plus" + second + "equals"+ answer;
+msg.voice = window.speechSynthesis.getVoices()[2];
+window.speechSynthesis.speak(msg);
+  }
+
 
 
 
@@ -37,7 +61,9 @@ export default class Addition extends Component {
     
     return (
    <div>
-        <button title="Generate Random Number" onClick={this.addNumbers}>Check the Answer</button> 
+        <button className='m-1' title="Generate Random Number" onClick={this.addNumbers}>Check the Answer</button> 
+        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={this.sayIt}><span><i className="fa-solid fa-volume-high"></i></span></button>
+        {/* <i className="fa-regular fa-volume"></i> */}
        { <h2 className='text-center'>{result}</h2>}
         </div>
     );

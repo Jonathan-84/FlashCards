@@ -22,6 +22,23 @@ export default class add2 extends Component {
     this.setState({ firstnumber: randomNumber1,secondnumber:randomNumber2 })
   }
 
+  sayQuestion = () => {
+    const {firstnumber,secondnumber} = this.state;
+
+    if ('speechSynthesis' in window) {
+
+     }else{
+
+       alert("Sorry, your browser doesn't support text to speech!");
+     }
+
+var msg = new SpeechSynthesisUtterance();
+msg.text = "What does" + firstnumber + "plus" + secondnumber + "equal ?";
+msg.voice = window.speechSynthesis.getVoices()[2];
+window.speechSynthesis.speak(msg);
+  }
+
+
 
   render() {
 
@@ -38,7 +55,8 @@ export default class add2 extends Component {
   <p>What is the sum? </p>
   </div>
     <div className='d-flex justify-content-center'>
-        <button title="Generate Random Number" onClick={this.generateNumbers}>Random Numbers</button> 
+        <button className='m-1' title="Generate Random Number" onClick={this.generateNumbers}>Generate Numbers</button> 
+        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={this.sayQuestion}><span><i className="fa-solid fa-volume-high"></i></span></button>
         </div>
         <h2 className='text-center'>{firstnumber} + {secondnumber}</h2>
       

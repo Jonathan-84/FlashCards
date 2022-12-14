@@ -7,6 +7,20 @@ import Cards from './cards';
 export default class SightCards extends Component {
 
 
+  sayWord = word => () => {
+    if ('speechSynthesis' in window) {
+
+     }else{
+
+       alert("Sorry, your browser doesn't support text to speech!");
+     }
+
+
+var msg = new SpeechSynthesisUtterance();
+msg.text = word;
+msg.voice = window.speechSynthesis.getVoices()[2];
+window.speechSynthesis.speak(msg);
+  }
     
   render() {
  
@@ -26,9 +40,10 @@ export default class SightCards extends Component {
 
      
 <div class="card-columns p-3">
+
 {Words.map((e)=>{
        return (
-       <Cards word={e.word} sentence={e.sentence}/>
+       <Cards word={e.word} sentence={e.sentence} speak={this.sayWord}/>
      );})}
         </div>
      </div>
