@@ -4,21 +4,6 @@ import Flippy, { FrontSide, BackSide } from 'react-flippy';
 if possible make the second side only appear on click. So word, click to flip card over for definition
 and sentence*/
 
-// function sayWord(props){
-
-//   if ('speechSynthesis' in window) {
-//     // Speech Synthesis supported 🎉
-//    }else{
-//      // Speech Synthesis Not Supported 😣
-//      alert("Sorry, your browser doesn't support text to speech!");
-//    }
-
-// var msg = new SpeechSynthesisUtterance();
-// msg.text = "What does";
-// msg.voice = window.speechSynthesis.getVoices()[2];
-// window.speechSynthesis.speak(msg);
-// }
-
 function Cards (props){
   const ref = useRef();
 

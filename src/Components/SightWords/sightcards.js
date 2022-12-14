@@ -18,8 +18,8 @@ export default class SightCards extends Component {
 
 var msg = new SpeechSynthesisUtterance();
 msg.text = word;
-msg.lang = "en-US"
-// msg.voice = window.speechSynthesis.getVoices()[2];
+msg.voice = window.speechSynthesis.getVoices()[2];
+msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
   }
     
