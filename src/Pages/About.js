@@ -21,9 +21,10 @@ let hour = currentDate.getHours();
         <br></br>
 <div className='col '>
         <div className="alert alert-primary text-center" role="alert">
-  <span className="font-weight-bold">Updates:</span> App can be saved for offline usage (PWA) and difficulty terminology has been changed.
-Level 2 added for Addition, Numbers, and Level 1 added for Multiplication. New gifs also added. 
-<span className="font-weight-bold"> Future Updates:</span> automatic grading (for math), performance improvements, and eventually more topics/levels.
+  <span className="font-weight-bold">Updates:</span> A "Click to Listen" button has been added the Math and Sight Word sections.
+  By the clicking these buttons, the device or it's browser can read that section. It was added for more independent
+  practice and hopefully the repetition will increase retention. New gifs also added. 
+<span className="font-weight-bold"> Future Updates:</span> automatic grading (for math and possibly the Sightword test), performance improvements, and eventually more topics/levels.
 </div>
 </div>
         <br></br>
@@ -32,12 +33,12 @@ Level 2 added for Addition, Numbers, and Level 1 added for Multiplication. New g
         <h2 className='text-center'>About the Project</h2>
         
 <div className="d-flex mt-auto justify-content-center">
-<p> {greetingText()}I'm not an educator... I'm a dad! With a young son in Kindergarten, I'm very involved with his education. 
-That involvement continued when my son was interested in advancing ahead in the curriculum.
-While he an his friends have focused on the building blocks of reading (letter recognition and sight words), he was already practicing
+<p> {greetingText()}I'm not an educator... I'm a dad! When my son was in Kindergarten, he entered at a different ability level, so we were often
+working on extra work outside of school.
+While he an his friends had focused on the building blocks of reading (letter recognition and sight words) in school, he was already practicing
  basic addition and reading at home.
 
-After his teacher continued to kindly send practice sheet, after practice sheet home, I announced to my wife, "that I could build something that does the same thing". 
+His teacher would kindly send practice sheet, after practice sheet home, so I told my wife "that I could build something that does the same thing". 
 With her supportive, "do it", this simple project was born.
 <br></br>
     <br></br>
