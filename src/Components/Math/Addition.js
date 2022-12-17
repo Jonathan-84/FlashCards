@@ -47,8 +47,8 @@ export default class Addition extends Component {
 
      var msg = new SpeechSynthesisUtterance();
 msg.text = first + "plus" + second + "equals"+ answer;
-msg.voice = window.speechSynthesis.getVoices()[2];
-msg.lang = "en-US";
+msg.lang = "en-US"
+// msg.voice = window.speechSynthesis.getVoices()[2];
 window.speechSynthesis.speak(msg);
   }
 

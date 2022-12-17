@@ -32,8 +32,8 @@ export default class add1 extends Component {
 
 var msg = new SpeechSynthesisUtterance();
 msg.text = "What does" + firstnumber + "plus" + secondnumber + "equal ?";
-msg.voice = window.speechSynthesis.getVoices()[2];
-msg.lang = "en-US";
+msg.lang = "en-US"
+// msg.voice = window.speechSynthesis.getVoices()[2];
 window.speechSynthesis.speak(msg);
   }
 

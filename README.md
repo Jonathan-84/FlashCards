@@ -45,6 +45,7 @@ This is a web application that can be visited [here](https://jonathan-84.github.
 * JSX
 * Boot Strap
 * React-Flippy
+* Web Speech API
 * Font Awesome
 
 ## Screenshots
@@ -62,5 +63,10 @@ I want to give credit, where credit is due. Since this app is intended for child
  [PJ Masks](https://www.genymama.com/uploads/1/1/3/9/113908711/pjmasks_orig.gif), [TMNT](https://giphy.com/gifs/teenage-mutant-ninja-turtles-yes-VgeGEVTdwzZao), [olaf](https://38.media.tumblr.com/520a26ceb2f57d8dfe5f0999af221ca6/tumblr_n7sysdADKL1rn27rbo8_250.gif), [kermit](https://giphy.com/gifs/holy-shit-best-day-ever-marriage-equality-and-alabama-shakes-DYH297XiCS2Ck), [stevie](www.giphy.com) and [Genie](https://images.gr-assets.com/hostedimages/1549287369ra/27013190.gif).
 
 ## How You Can Contribute
-I'm open to any ideas, the goal of this project is 100% about making a simple app that helps our children learn. Up to this point, I've had 2 items slow me down: the auto-scoring capability.  If you are interested in contributing with solutions to those challanges, or have other awesome ideas, please email me at jonathan.robinson@outlook.com.
+I'm open to any ideas, the goal of this project is 100% about making a simple app that helps our children learn. Right now, my main focus is on adding auto-scoring for math and am currently looking into the ability to use speech recognition (fromn the JavaScript Speech API) to auto score (letters, numbers, and maybe sightwords)- I'm not sure how skilled it would be for new readers.  If you are interested in contributing with solutions to those challanges, or have other awesome ideas, please email me at jonathan.robinson@outlook.com.
 
+
+/// bluey solo dance : https://giphy.com/gifs/officialblueytv-dance-dancing-bluey-j6TmWtNerkGPgrpxNF
+// bluey yes : https://giphy.com/gifs/officialblueytv-yes-wow-bluey-ibXIzo3FSVvM8FTuYr
+// bandit dancing : https://giphy.com/gifs/officialblueytv-dance-dancing-bluey-jmTNcqNNRB6pIgCuF2
+// captain america : https://gifimage.net/wp-content/uploads/2017/07/avengers-gif-8.gif

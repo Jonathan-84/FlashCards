@@ -42,8 +42,8 @@ window.speechSynthesis.speak(msg);
     }
     else {
         msg.text = "What does" + secondnumber + "minus" + firstnumber + "equal ?";
-        msg.voice = window.speechSynthesis.getVoices()[2];
-        msg.lang = "en-US";
+        msg.lang = "en-US"
+        // msg.voice = window.speechSynthesis.getVoices()[2];
         window.speechSynthesis.speak(msg);
     }
   }

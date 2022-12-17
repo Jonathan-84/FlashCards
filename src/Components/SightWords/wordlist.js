@@ -16,7 +16,7 @@ const Words=[
   },
   {
     word:"or",
-    sentence:"I want to fly."
+    sentence:"Pie or ice cream?"
  
   },
   {
@@ -61,11 +61,11 @@ sentence:"I see the dog. "
   sentence:"Dad said hi!"
 },{
 word:"like",
-sentence:"I like PJ Masks."
+sentence:"I like Bluey."
 },
   {
     word:"my",
-    sentence:"Gecko is my favorite."
+    sentence:"Gekko is my favorite."
   },
   {
     word:"this",
@@ -153,7 +153,7 @@ sentence:"Will you play with me?"
   sentence:"We played with his toys."
 },{
 word:"from",
-sentence:"I am from Broomall."
+sentence:"I am from the USA."
 },
   {
     word:"we",

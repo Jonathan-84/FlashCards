@@ -53,8 +53,8 @@ export default class Subtraction extends Component {
       else {
           let subtracted= random2 - random1;
           msg.text = random2 + "minus" + random1 + "equals"+ subtracted;
-          msg.voice = window.speechSynthesis.getVoices()[2];
-          msg.lang = "en-US";
+          msg.lang = "en-US"
+          // msg.voice = window.speechSynthesis.getVoices()[2];
           window.speechSynthesis.speak(msg);
     }
   }

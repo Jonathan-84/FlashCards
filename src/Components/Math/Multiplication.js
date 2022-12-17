@@ -41,8 +41,8 @@ export default class Multiplication extends Component {
 
      var msg = new SpeechSynthesisUtterance();
      msg.text = first + "multiplied by" + second + "equals"+ answer;
-msg.voice = window.speechSynthesis.getVoices()[2];
-msg.lang = "en-US";
+     msg.lang = "en-US"
+     // msg.voice = window.speechSynthesis.getVoices()[2];
 window.speechSynthesis.speak(msg);
   }
 
