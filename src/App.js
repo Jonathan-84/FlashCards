@@ -18,6 +18,7 @@ import add1 from './Components/Math/add1'
 import add2 from './Components/Math/add2.js'
 import sub1 from './Components/Math/sub1'
 import multi1 from './Components/Math/multi1'
+import mixed1 from './Components/Math/mixed1'
 import capital from './Components/Letters/capitalletters'
 import lowercase from './Components/Letters/lowercase'
 import Footer from './Components/Footer.js'
@@ -51,6 +52,7 @@ function App() {
          <Route exact path= {'/sightrandom'} component={sightrandom}/>
          <Route exact path= {'/add1'} component={add1}/>
          <Route exact path= {'/multi1'} component={multi1}/>
+         <Route exact path= {'/basiclevel1test'} component={mixed1}/>
          <Route exact path= {'/add2'} component={add2}/>
          <Route exact path= {'/sub1'} component={sub1}/>
 
