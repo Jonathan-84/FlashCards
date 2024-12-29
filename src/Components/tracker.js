@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import Mixed from "./Math/Mixed";
 
 /// look to remove the http for the gifs, it seem slike it may be causing an issue, it may
 ///be more secure then as well
@@ -193,6 +194,7 @@ reset = () => {
              <br></br>
              {top}
              <br></br>
+             {/* <Mixed className='d-none' correct={this.correct} wrong={this.wrong}/> */}
              </div>
              </div>
              </div>
