@@ -73,10 +73,25 @@ function Navbar(){
                   <Link to={"/add2"}className="nav-text">Addition: Level 2</Link>
                 </ul>
                 <ul>
+                  <Link to={"/add3"}className="nav-text">Addition: Level 3</Link>
+                </ul>
+                <ul>
                   <Link to={"/sub1"}className="nav-text">Subtraction: Level 1</Link>
                </ul>
                <ul>
+                  <Link to={"/sub2"}className="nav-text">Subtraction: Level 2</Link>
+               </ul>
+               <ul>
+                  <Link to={"/sub3"}className="nav-text">Subtraction: Level 3</Link>
+               </ul>
+               <ul>
                   <Link to={"/multi1"}className="nav-text">Multiplication: Level 1</Link>
+               </ul>
+               <ul>
+                  <Link to={"/multi2"}className="nav-text">Multiplication: Level 2</Link>
+               </ul>
+               <ul>
+                  <Link to={"/multi3"}className="nav-text">Multiplication: Level 3</Link>
                </ul>
                <ul>
                   <Link to={"/basiclevel1test"}className="nav-text">Test: Basic Level 1</Link>
