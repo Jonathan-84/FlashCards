@@ -1,10 +1,9 @@
 import React, { useState, useContext } from 'react';
-// import { TrackerContext } from '../TrackerContext';
-// import trackerFunctions from '../TrackerContext';
+
 import { TrackerContext } from '../TrackerContext.js'
 
 
-const Mixed = ({ first, second, operator }) => {
+const MultiDivideTest = ({ first, second, operator}) => {
   const [result, setResult] = useState("");
   const [usersAnswer, setUsersAnswer] = useState("");
   const { correct, wrong, count, gif, feedback } = useContext(TrackerContext);
@@ -14,14 +13,11 @@ const Mixed = ({ first, second, operator }) => {
 
     console.log(first, second, operator); // Debugging step
 
-    if (operator === "+") {
-      answer = first + second;
-    } else if (operator === "-" && second >= first) {
-      answer = second - first;
-    } else if (operator === "-" && first >= second) {
-      answer = first - second;
+    if (operator === "/") {
+      answer = second;
+    } else if (operator === "*" ) {
+      answer = second * first;
     }
-
     console.log("Calculated answer: ", answer); // Debugging step
     setResult(answer); // Update the result state
 
@@ -63,4 +59,4 @@ const Mixed = ({ first, second, operator }) => {
   );
 };
 
-  export default Mixed;
+  export default MultiDivideTest;

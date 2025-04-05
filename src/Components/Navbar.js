@@ -93,11 +93,27 @@ function Navbar(){
                <ul>
                   <Link to={"/multi3"}className="nav-text">Multiplication: Level 3</Link>
                </ul>
-               <ul>
-                  <Link to={"/basiclevel1test"}className="nav-text">Test: Basic Level 1</Link>
-               </ul>
+            
                   </div>
       </ul>
+      {/* <ul className="nav-item dropdown"> */}
+      <ul>
+        <Link className="nav-text " id="navbarDropdownMenuLink" to={"/test"} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Test Yourself
+        </Link>
+        </ul>
+        {/* <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <ul>
+                  <Link to={"/addsub1test"}className="nav-text">Test: Add/Sub Level 1</Link>
+               </ul>
+               <ul>
+                  <Link to={"/addsub2test"}className="nav-text">Test: Add/Sub Level 2</Link>
+               </ul>
+               <ul>
+                  <Link to={"/addsub3test"}className="nav-text">Test: Add/Sub Level 3</Link>
+               </ul>
+                  </div> */}
+      {/* </ul> */}
        </ul>
 
        <ul className="navbar-nav">

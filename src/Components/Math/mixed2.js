@@ -5,27 +5,27 @@ import { TrackerContext } from '../TrackerContext.js'
 
 
 
-const Mixed1 =() => {
+const Mixed2 =() => {
+
   const { correct, wrong, count, reset, gif } = useContext(TrackerContext);
   const [ firstnumber, setFirstNumber ] = useState("");
   const [ secondnumber, setSecondNumber ] = useState("");
   const [ sign, setSign ]= useState("");
-  
-  
+
+ 
+
   const generateNumbers = () => {
-    var randomNumber1 = Math.floor(Math.random() * 10) + 1;
+    var randomNumber1 = Math.floor(Math.random() * 100) + 1;
     var randomNumber2 = Math.floor(Math.random() * 10) + 1;
     var signs = ['+', '-'];
     let randomSign=signs[Math.floor(Math.random()*signs.length)];
     setFirstNumber(randomNumber1);
     setSecondNumber(randomNumber2);
     setSign(randomSign);
-
-    // this.setState({ firstnumber: randomNumber1,secondnumber:randomNumber2, sign:randomSign })
   }
 
   const sayQuestion = () => {
-    // const {firstnumber,secondnumber, sign} = this.state;
+  
 
     if ('speechSynthesis' in window) {
      }else{
@@ -56,9 +56,6 @@ window.speechSynthesis.speak(msg);
 }
   }
 
-
-
-    // const {firstnumber,sign, secondnumber} = this.state;
     let problem;
 
     if 
@@ -80,13 +77,14 @@ window.speechSynthesis.speak(msg);
      )
     }
 
+
     
     return (
       <>
    <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
       <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
-  <div className="card-header text-center">Test Your Might: Level 1 Add/Sub</div>
+  <div className="card-header text-center">Test Your Might: Level 2 Add/Sub</div>
   <div className="card-body ">
   <div className='col  d-flex justify-content-center'>
   <p>What is the answer? </p>
@@ -111,7 +109,6 @@ window.speechSynthesis.speak(msg);
   </>
       );
     }
-    export default Mixed1;
-
+      export default Mixed2;
 
 

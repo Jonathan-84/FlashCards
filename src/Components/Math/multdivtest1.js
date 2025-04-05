@@ -1,28 +1,51 @@
 import React, { useState, useContext } from 'react';
-import Mixed from './Mixed.js';
+import MultiDivideTest from './MultDivideTest.js';
 
 import { TrackerContext } from '../TrackerContext.js'
 
 
 
-const Mixed1 =() => {
+const MultiDivTest1 =() => {
   const { correct, wrong, count, reset, gif } = useContext(TrackerContext);
   const [ firstnumber, setFirstNumber ] = useState("");
   const [ secondnumber, setSecondNumber ] = useState("");
+  const [ highestNumber, setHighestNumber ] = useState("");
   const [ sign, setSign ]= useState("");
   
   
+
+//   function generateDivisionProblem() {
+//     // Generate random whole numbers
+//     let divisor = Math.floor(Math.random() * 10) + 1; // Avoid zero as divisor
+//     let quotient = Math.floor(Math.random() * 10) + 1;
+
+//     // Calculate dividend
+//     let dividend = divisor * quotient;
+
+//     console.log(`${dividend} ÷ ${divisor} = ${quotient}`);
+// }
+
+// generateDivisionProblem();
   const generateNumbers = () => {
     var randomNumber1 = Math.floor(Math.random() * 10) + 1;
     var randomNumber2 = Math.floor(Math.random() * 10) + 1;
-    var signs = ['+', '-'];
+    var signs = ['*', '/'];
     let randomSign=signs[Math.floor(Math.random()*signs.length)];
+
+    if (randomSign === '/') {
+      setHighestNumber(randomNumber1 * randomNumber2);
+      console.log(`${highestNumber} ÷ ${randomNumber1} = ${randomNumber2}`);
     setFirstNumber(randomNumber1);
     setSecondNumber(randomNumber2);
     setSign(randomSign);
-
-    // this.setState({ firstnumber: randomNumber1,secondnumber:randomNumber2, sign:randomSign })
+    }
+    else {
+      setHighestNumber('');
+      setFirstNumber(randomNumber1);
+      setSecondNumber(randomNumber2);
+      setSign(randomSign);
   }
+}
 
   const sayQuestion = () => {
     // const {firstnumber,secondnumber, sign} = this.state;
@@ -35,23 +58,16 @@ const Mixed1 =() => {
 var msg = new SpeechSynthesisUtterance();
 
 
-if(sign === '+') {
-  msg.text = "What does" + firstnumber + "plus" + secondnumber + "equal ?";
+if(sign === '*') {
+  msg.text = "What does" + highestNumber + "multiplied by" + firstnumber + "equal ?";
   msg.voice = window.speechSynthesis.getVoices()[2];
   msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
 }
-if(sign === '-' && secondnumber > firstnumber ) {
-  msg.text = "What does" + secondnumber + 'minus' + firstnumber + "equal ?";
+if(sign === '/' ) {
+  msg.text = "What does" + highestNumber + 'divided by' + firstnumber + "equal ?";
   msg.voice = window.speechSynthesis.getVoices()[2];
   msg.lang = "en-US";
-window.speechSynthesis.speak(msg);
-}
-
-if(sign === '-' && firstnumber > secondnumber ) {
-msg.text = "What does" + firstnumber + 'minus' + secondnumber + "equal ?";
-msg.voice = window.speechSynthesis.getVoices()[2];
-msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
 }
   }
@@ -62,22 +78,17 @@ window.speechSynthesis.speak(msg);
     let problem;
 
     if 
-    (sign === '+') {
+    (sign === '*') {
       problem = (
-        <h2 className='text-center'>{firstnumber} + {secondnumber}</h2>
+        <h2 className='text-center'>{firstnumber} x {secondnumber}</h2>
       )
     }
     if
-    (sign === '-' && secondnumber < firstnumber) {
+    (sign === '/') {
       problem=(
-        <h2 className='text-center'>{firstnumber} - {secondnumber}</h2>
+        <h2 className='text-center'>{highestNumber} / {firstnumber}</h2>
      )
-    }
-    if
-    (sign === '-' && firstnumber < secondnumber) {
-      problem=(
-        <h2 className='text-center'>{secondnumber} - {firstnumber}</h2>
-     )
+    
     }
 
     
@@ -86,7 +97,7 @@ window.speechSynthesis.speak(msg);
    <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
       <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
-  <div className="card-header text-center">Test Your Might: Level 1 Add/Sub</div>
+  <div className="card-header text-center">Test Your Might: Multiplication and Division</div>
   <div className="card-body ">
   <div className='col  d-flex justify-content-center'>
   <p>What is the answer? </p>
@@ -100,7 +111,7 @@ window.speechSynthesis.speak(msg);
         <br></br>
    
         <div className='d-flex justify-content-center'>
-           <Mixed first={firstnumber} second={secondnumber} operator={sign}></Mixed>
+           <MultiDivideTest first={firstnumber} second={secondnumber} operator={sign}></MultiDivideTest>
            </div>
            </div>
            </div>
@@ -111,7 +122,8 @@ window.speechSynthesis.speak(msg);
   </>
       );
     }
-    export default Mixed1;
+    
+    export default MultiDivTest1;
 
 
 

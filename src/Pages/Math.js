@@ -10,6 +10,9 @@ import sub3 from '../Assets/SubLvl3.jpg'; // gives image path
 import multi1 from '../Assets/MultLvl1.jpg'; // gives image path
 import multi2 from '../Assets/MultLvl2.jpg'; // gives image path
 import multi3 from '../Assets/MultLvl3.jpg'; // gives image path
+// import mixed1 from '../Assets/MixedLvl1.jpg'; // gives image path
+// import mixed2 from '../Assets/MixedLvl2.jpg'; // gives image path
+// import mixed3 from '../Assets/MixedLvl3.jpg'; // gives image path
 
 ///// Need to update the images and clean up how I refer to sections
 /// also need to add the level 2 for number identification 0-100

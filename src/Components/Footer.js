@@ -44,6 +44,9 @@ function Footer() {
       <div>
       <Link  to={"/math"} class="text-secondary">Math</Link>
       </div>
+      <div>
+      <Link  to={"/test"} class="text-secondary">Math Tests</Link>
+      </div>
       </div>
 
   
