@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/FlashCards/static/css/main.fe9ad5e7.css",
-    "main.js": "/FlashCards/static/js/main.0bedc672.js",
-    "static/media/Sight Words- full.jpg": "/FlashCards/static/media/Sight Words- full.55f1a1553a589f895fe3.jpg",
+    "main.js": "/FlashCards/static/js/main.b7c665c6.js",
     "static/media/MultLvl3.jpg": "/FlashCards/static/media/MultLvl3.0a4677e6d09c7e6da1e2.jpg",
     "static/media/MultLvl2.jpg": "/FlashCards/static/media/MultLvl2.497e971f98c50105913f.jpg",
     "static/media/SubLvl2.jpg": "/FlashCards/static/media/SubLvl2.3ecd97e182ac2b97d3aa.jpg",
@@ -19,10 +18,10 @@
     "static/media/NumberLvl1.jpg": "/FlashCards/static/media/NumberLvl1.7139695011596a524a57.jpg",
     "index.html": "/FlashCards/index.html",
     "main.fe9ad5e7.css.map": "/FlashCards/static/css/main.fe9ad5e7.css.map",
-    "main.0bedc672.js.map": "/FlashCards/static/js/main.0bedc672.js.map"
+    "main.b7c665c6.js.map": "/FlashCards/static/js/main.b7c665c6.js.map"
   },
   "entrypoints": [
     "static/css/main.fe9ad5e7.css",
-    "static/js/main.0bedc672.js"
+    "static/js/main.b7c665c6.js"
   ]
 }
