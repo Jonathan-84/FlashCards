@@ -30,8 +30,10 @@ function Footer() {
 
 
      {/* This is the Quick Nav Section*/}
+
+     
  
-     <div className='col d-flex flex-column justify-content-around  flex-md-row'>
+     {/* <div className='col d-flex flex-column justify-content-around  flex-md-row'>
          <div>
       <Link to={"/letters"} class="text-secondary">Letters</Link>
       </div>
@@ -49,7 +51,7 @@ function Footer() {
       </div>
       </div>
 
-  
+   */}
 </div>
 </div>
 

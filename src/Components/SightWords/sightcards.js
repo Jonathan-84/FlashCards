@@ -27,6 +27,8 @@ window.speechSynthesis.speak(msg);
  
   return (
     <>
+    <br></br>
+    <br></br>
     <div className='mb-0'>
     <div className="col d-flex justify-content-center mt-3 ">
       {/*Text Container*/}      

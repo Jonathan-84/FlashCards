@@ -21,10 +21,10 @@ let hour = currentDate.getHours();
         <br></br>
 <div className='col '>
         <div className="alert alert-primary text-center" role="alert">
-  <span className="font-weight-bold">Updates:</span> A "Click to Listen" button has been added the Math and Sight Word sections.
-  By the clicking these buttons, the device or it's browser can read that section. It was added for more independent
-  practice and hopefully the repetition will increase retention. New gifs also added. 
-<span className="font-weight-bold"> Future Updates:</span> automatic grading (for math and possibly the Sightword test), performance improvements, and eventually more topics/levels.
+  <span className="font-weight-bold">Updates:</span> The manual tracker has been removed, you will now automatically be graded and the tracker
+  will updated in the test Section which has been newly added. The site is being reorganized based on topic and functionality. Multiplication and 
+  Division test option is available.
+<span className="font-weight-bold"> Future Updates:</span> performance improvements, ability to practice division, and overall improvements with layout planned.
 </div>
 </div>
         <br></br>

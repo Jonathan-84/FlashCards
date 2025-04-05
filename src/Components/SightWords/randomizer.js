@@ -38,6 +38,9 @@ console.log(randomWord)
       const {sightword} = this.state;
       
       return (
+        <>
+        <br></br>
+        <br></br>
         <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
 
@@ -59,6 +62,7 @@ console.log(randomWord)
   </div>
   </div>
   </div>
+  </>
       );
     }
   }

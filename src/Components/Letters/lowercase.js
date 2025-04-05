@@ -32,6 +32,8 @@ export default class lowercase extends Component {
       
       return (
         <>
+        <br></br>
+        <br></br>
         <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
 

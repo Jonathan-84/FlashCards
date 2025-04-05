@@ -10,6 +10,8 @@ import sub3 from '../Assets/SubLvl3.jpg'; // gives image path
 import multi1 from '../Assets/MultLvl1.jpg'; // gives image path
 import multi2 from '../Assets/MultLvl2.jpg'; // gives image path
 import multi3 from '../Assets/MultLvl3.jpg'; // gives image path
+import num1 from '../Assets/NumberLvl1.jpg'; // gives image path
+import num2 from '../Assets/NumbersLvl2.jpg'; // gives image path
 // import mixed1 from '../Assets/MixedLvl1.jpg'; // gives image path
 // import mixed2 from '../Assets/MixedLvl2.jpg'; // gives image path
 // import mixed3 from '../Assets/MixedLvl3.jpg'; // gives image path
@@ -36,6 +38,25 @@ export default class Math extends Component {
 <br></br>
 <div className="container-fluid col-7 p-1 ">
 <div className=" row d-flex justify-content-center align-items-center">
+<div className='row'>
+<div className='col-md border bg-info rounded m-1'>
+<h2 className='text-center text-white h4'>Number Identification Level 1</h2>
+<Link to={"/numbers1"} className="nav-text"><img width="400" height="300"  alt="screenshot of num 1" src={num1}  className="sightcard"/>
+  </Link>
+  <br></br>
+  <br></br>
+  <p className='text-white'> Can your child identify the number between 0-20? </p>
+  
+  </div>
+  <div className='col-md border bg-info rounded m-1'>
+<h2 className='text-center text-white h4'>Number Identification Level 2</h2>
+<Link to={'/numbers2'} className="nav-text"><img  width="400" height="300" alt="screenshot of num 2" src={num2}  className="sightcard"/>
+  </Link>
+  <br></br>
+  <br></br>
+  <p className='text-white'>  Can your child identify the number between 0-100? </p>
+ </div>
+</div>
 <div className='row'>
   <div className='col-md border bg-info rounded m-1'>
     

@@ -67,12 +67,13 @@ const Tracker = () => {
         <option value={75}>75</option>
         <option value={100}>100</option>
       </select> &nbsp;                     
-      <button title="Set the Target" onClick={handleSetTarget} type="button" className="btn btn-secondary btn-sm m-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="fa-solid fa-gauge"></i></button> 
+      <button title="Set the correct answer target" onClick={handleSetTarget} type="button" className="btn btn-secondary btn-sm m-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="fa-solid fa-gauge"></i></button> 
       {/* <p>You selected: {target}</p> */}
     </div>
 
             {/* Correct = (<i className="bi bi-check-lg"></i>) Incorrect = (<i className="bi bi-x-lg"></i>)  */}
-       Reset = (<i className="bi bi-trash"></i>) </p>
+       {/* Reset = (<i className="bi bi-trash"></i>) </p> */}
+       </p>
             <br></br>
            
              <ProgressBar now={percentageToGoal} label={count}/>

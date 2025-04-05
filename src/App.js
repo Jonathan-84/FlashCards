@@ -9,9 +9,9 @@ import Home from './Pages/home'
 import About from './Pages/About'
 import Math from './Pages/Math'
 import Test from './Pages/Test.js'
-import Letters from './Pages/Letters'
-import Numbers from './Pages/numbers'
-import Sightwords from './Pages/sightwords'
+import Reading from './Pages/Letters'
+// import Numbers from './Pages/numbers'
+// import Sightwords from './Pages/sightwords'
 
 
 /// Components
@@ -52,14 +52,14 @@ function App() {
         <Route exact path= {'/home'} component={Home}/>
         <Route exact path= {'/about'} component={About}/>
         <Route exact path= {'/test'} component={Test}/>
-        <Route exact path= {'/letters'} component={Letters}/>
+        <Route exact path= {'/reading'} component={Reading}/>
          <Route exact path= {'/capital'} component={capital}/>
          <Route exact path= {'/lowercase'} component={lowercase}/>
-         <Route exact path= {'/numbers'} component={Numbers}/>
+         {/* <Route exact path= {'/numbers'} component={Numbers}/> */}
          <Route exact path= {'/numbers1'} component={numbers1}/>
          <Route exact path= {'/numbers2'} component={numbers2}/>
          <Route exact path= {'/math'} component={Math}/>
-         <Route exact path= {'/sightwords'} component={Sightwords}/>
+         {/* <Route exact path= {'/sightwords'} component={Sightwords}/> */}
          <Route exact path= {'/sightcards'} component={SightCards}/>
          <Route exact path= {'/sightrandom'} component={sightrandom}/>
          <Route exact path= {'/add1'} component={add1}/>
