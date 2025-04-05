@@ -68,7 +68,7 @@ const Tracker = () => {
         <option value={100}>100</option>
       </select> &nbsp;                     
       <button title="Set the Target" onClick={handleSetTarget} type="button" className="btn btn-secondary btn-sm m-1" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover"><i className="fa-solid fa-gauge"></i></button> 
-      <p>You selected: {target}</p>
+      {/* <p>You selected: {target}</p> */}
     </div>
 
             {/* Correct = (<i className="bi bi-check-lg"></i>) Incorrect = (<i className="bi bi-x-lg"></i>)  */}

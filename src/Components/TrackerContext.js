@@ -46,6 +46,7 @@ const randomKudos = ()=> {
 const randomLink = links[Math.floor(Math.random() * links.length)];
 setFeedback(randomLink); // Update gif state
 console.log(randomLink);
+randomGif(); // Call to get a random gif when correct
 }
 
 const randomEncouragement = ()=> {
