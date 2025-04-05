@@ -37,20 +37,17 @@ var msg = new SpeechSynthesisUtterance();
 
 if(sign === '+') {
   msg.text = "What does" + firstnumber + "plus" + secondnumber + "equal ?";
-  msg.voice = window.speechSynthesis.getVoices()[2];
   msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
 }
 if(sign === '-' && secondnumber > firstnumber ) {
   msg.text = "What does" + secondnumber + 'minus' + firstnumber + "equal ?";
-  msg.voice = window.speechSynthesis.getVoices()[2];
   msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
 }
 
 if(sign === '-' && firstnumber > secondnumber ) {
 msg.text = "What does" + firstnumber + 'minus' + secondnumber + "equal ?";
-msg.voice = window.speechSynthesis.getVoices()[2];
 msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
 }

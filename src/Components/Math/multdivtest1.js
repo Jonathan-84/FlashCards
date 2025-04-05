@@ -47,13 +47,11 @@ var msg = new SpeechSynthesisUtterance();
 
 if(sign === '*') {
   msg.text = "What does" + highestNumber + "multiplied by" + firstnumber + "equal ?";
-  msg.voice = window.speechSynthesis.getVoices()[2];
   msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
 }
 if(sign === '/' ) {
   msg.text = "What does" + highestNumber + 'divided by' + firstnumber + "equal ?";
-  msg.voice = window.speechSynthesis.getVoices()[2];
   msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
 }
