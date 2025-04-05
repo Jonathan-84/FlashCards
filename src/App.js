@@ -17,6 +17,7 @@ import Reading from './Pages/Letters'
 /// Components
 import numbers1 from './Components/Numbers/numbers1'
 import numbers2 from './Components/Numbers/numbers2'
+import division from './Components/Math/division1.js'
 import add1 from './Components/Math/add1'
 import add2 from './Components/Math/add2.js'
 import add3 from './Components/Math/add3'
@@ -55,7 +56,7 @@ function App() {
         <Route exact path= {'/reading'} component={Reading}/>
          <Route exact path= {'/capital'} component={capital}/>
          <Route exact path= {'/lowercase'} component={lowercase}/>
-         {/* <Route exact path= {'/numbers'} component={Numbers}/> */}
+         <Route exact path= {'/division1'} component={division}/>
          <Route exact path= {'/numbers1'} component={numbers1}/>
          <Route exact path= {'/numbers2'} component={numbers2}/>
          <Route exact path= {'/math'} component={Math}/>

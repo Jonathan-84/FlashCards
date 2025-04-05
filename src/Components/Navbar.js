@@ -72,6 +72,9 @@ function Navbar(){
                <ul>
                   <Link to={"/multi3"}className="nav-text">Multiplication: Lvl 3</Link>
                </ul>
+               <ul>
+                  <Link to={'/division1'}className="nav-text">Division: Lvl 1</Link>
+               </ul>
             
                   </div>
       </ul>

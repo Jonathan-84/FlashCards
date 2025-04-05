@@ -34,7 +34,7 @@ export default class sub2 extends Component {
 
     if(firstnumber>= secondnumber) {
         msg.text = "What does" + firstnumber + "minus" + secondnumber + "equal ?";
-        msg.voice = window.speechSynthesis.getVoices()[2];
+        // msg.voice = window.speechSynthesis.getVoices()[2];
         msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
 

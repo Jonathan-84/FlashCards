@@ -83,8 +83,7 @@ window.speechSynthesis.speak(msg);
     
     return (
       <>
-                <br></br>
-                <br></br>
+              
    <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
       <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >

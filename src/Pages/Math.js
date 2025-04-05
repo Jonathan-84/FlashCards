@@ -56,6 +56,15 @@ export default class Math extends Component {
   <br></br>
   <p className='text-white'>  Can your child identify the number between 0-100? </p>
  </div>
+ <div className='col-md border bg-info rounded m-1'>
+<h2 className='text-center text-white h4'>Number Identification Level 2</h2>
+<Link to={'/division'} className="nav-text"><img  width="400" height="300" alt="screenshot of num 2" src={num2}  className="sightcard"/>
+  </Link>
+  <br></br>
+  <br></br>
+  <p className='text-white'>  Can you divide when the numbers are multiples of 1-10? </p>
+ </div>
+ 
 </div>
 <div className='row'>
   <div className='col-md border bg-info rounded m-1'>

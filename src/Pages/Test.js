@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import {Tabs, Tab, Button, ButtonGroup, ButtonToolbar } from 'react-bootstrap';
+import {Tabs, Tab, Container, Col, Row } from 'react-bootstrap';
 
 // import Button from 'react-bootstrap/Button';
 // import ButtonGroup from 'react-bootstrap/ButtonGroup';
@@ -41,6 +41,10 @@ const Math = () => {
 
     
       </div>
+  
+      <Row className="mb-3" >
+        <Col>
+
       <Tabs
       defaultActiveKey="profile"
       id="fill-tab-example"
@@ -63,7 +67,10 @@ const Math = () => {
         Tab content for Contact
       </Tab> */}
     </Tabs>
-   
+    </Col>
+      </Row>
+
+
 <br></br>
 {/* <div className="container-fluid col-7 p-1 ">
 <div className=" row d-flex justify-content-center align-items-center">

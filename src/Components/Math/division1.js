@@ -1,11 +1,10 @@
 import React, { useState, useContext } from 'react';
-import MultiDivideTest from './MultDivideTest.js';
+import Division from './Division.js';
 
 import { TrackerContext } from '../TrackerContext.js'
 
 
-
-const MultiDivTest1 =() => {
+const Division1 =() => {
   const { correct, wrong, count, reset, gif } = useContext(TrackerContext);
   const [ firstnumber, setFirstNumber ] = useState("");
   const [ secondnumber, setSecondNumber ] = useState("");
@@ -16,22 +15,16 @@ const MultiDivTest1 =() => {
   const generateNumbers = () => {
     var randomNumber1 = Math.floor(Math.random() * 10) + 1;
     var randomNumber2 = Math.floor(Math.random() * 10) + 1;
-    var signs = ['*', '/'];
-    let randomSign=signs[Math.floor(Math.random()*signs.length)];
+    var signs = ['/'];
 
-    if (randomSign === '/') {
+
       setHighestNumber(randomNumber1 * randomNumber2);
       console.log(`${highestNumber} ÷ ${randomNumber1} = ${randomNumber2}`);
     setFirstNumber(randomNumber1);
     setSecondNumber(randomNumber2);
-    setSign(randomSign);
-    }
-    else {
-      setHighestNumber('');
-      setFirstNumber(randomNumber1);
-      setSecondNumber(randomNumber2);
-      setSign(randomSign);
-  }
+    setSign(signs);
+   
+  
 }
 
   const sayQuestion = () => {
@@ -45,12 +38,6 @@ const MultiDivTest1 =() => {
 var msg = new SpeechSynthesisUtterance();
 
 
-if(sign === '*') {
-  msg.text = "What does" + highestNumber + "multiplied by" + firstnumber + "equal ?";
-  msg.voice = window.speechSynthesis.getVoices()[2];
-  msg.lang = "en-US";
-window.speechSynthesis.speak(msg);
-}
 if(sign === '/' ) {
   msg.text = "What does" + highestNumber + 'divided by' + firstnumber + "equal ?";
   msg.voice = window.speechSynthesis.getVoices()[2];
@@ -62,21 +49,12 @@ window.speechSynthesis.speak(msg);
 
 
     // const {firstnumber,sign, secondnumber} = this.state;
-    let problem;
 
-    if 
-    (sign === '*') {
-      problem = (
-        <h2 className='text-center'>{firstnumber} x {secondnumber}</h2>
-      )
-    }
-    if
-    (sign === '/') {
-      problem=(
+      let problem=(
         <h2 className='text-center'>{highestNumber} / {firstnumber}</h2>
      )
     
-    }
+ 
 
     
     return (
@@ -84,7 +62,7 @@ window.speechSynthesis.speak(msg);
    <div className='mb-0'>
         <div className="col d-flex justify-content-center mt-3 ">
       <div className=" card text-white bg-info mb-1 d-flex justify-content-center col col-md-4" >
-  <div className="card-header text-center">Test Your Might: Multiplication and Division</div>
+  <div className="card-header text-center">Division Practice</div>
   <div className="card-body ">
   <div className='col  d-flex justify-content-center'>
   <p>What is the answer? </p>
@@ -98,7 +76,7 @@ window.speechSynthesis.speak(msg);
         <br></br>
    
         <div className='d-flex justify-content-center'>
-           <MultiDivideTest first={firstnumber} second={secondnumber} operator={sign}></MultiDivideTest>
+           <Division first={firstnumber} second={secondnumber} operator={sign} bigNumber={highestNumber}></Division>
            </div>
            </div>
            </div>
@@ -110,7 +88,8 @@ window.speechSynthesis.speak(msg);
       );
     }
     
-    export default MultiDivTest1;
+    export default Division1;
+
 
 
 
