@@ -44,7 +44,6 @@ export default class Subtraction extends Component {
       if(random1 >= random2) {
           let subtracted= random1 - random2
           msg.text = random1 + "minus" + random2 + "equals"+ subtracted;
-          msg.voice = window.speechSynthesis.getVoices()[2];
           msg.lang = "en-US";
   window.speechSynthesis.speak(msg);
   
@@ -54,7 +53,6 @@ export default class Subtraction extends Component {
           let subtracted= random2 - random1;
           msg.text = random2 + "minus" + random1 + "equals"+ subtracted;
           msg.lang = "en-US"
-          // msg.voice = window.speechSynthesis.getVoices()[2];
           window.speechSynthesis.speak(msg);
     }
   }

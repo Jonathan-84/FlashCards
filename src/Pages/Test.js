@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import {Tabs, Tab, Container, Col, Row } from 'react-bootstrap';
+import {Tabs, Tab, Col, Row, Container } from 'react-bootstrap';
 
 // import Button from 'react-bootstrap/Button';
 // import ButtonGroup from 'react-bootstrap/ButtonGroup';
@@ -41,10 +41,9 @@ const Math = () => {
 
     
       </div>
-  
+  <Container fluid>
       <Row className="mb-3" >
         <Col>
-
       <Tabs
       defaultActiveKey="profile"
       id="fill-tab-example"
@@ -69,43 +68,10 @@ const Math = () => {
     </Tabs>
     </Col>
       </Row>
+      </Container>
 
 
 <br></br>
-{/* <div className="container-fluid col-7 p-1 ">
-<div className=" row d-flex justify-content-center align-items-center">
- <div className='row'>
- <div className='col-md border bg-info rounded m-1'>
-<h2 className='text-center text-white h4'>Addition/ Subtraction Test Level 1</h2>
-<Link to={"/addsub1test"} className="nav-text"><img  width="400" height="300" alt="screenshot of multi 1" src={multi1}  className="sightcard"/>
-  </Link>
-  <br></br>
-  <br></br>
-  <p className='text-white'> A random number (0-10) will be added or subtracted from a number from (0-10).
-  </p>
- </div>
- <div className='col-md border bg-info rounded m-1'>
-<h2 className='text-center text-white h4'>Addition/ Subtraction Test Level 2</h2>
-<Link to={"/addsub2test"} className="nav-text"><img  width="400" height="300" alt="screenshot of multi 1" src={multi2}  className="sightcard"/>
-  </Link>
-  <br></br>
-  <br></br>
-  <p className='text-white'> A random number (0-100) will be added or subtracted from a number from (0-10).
-  </p>
- </div>
- <div className='col-md border bg-info rounded m-1'>
-<h2 className='text-center text-white h4'>Addition/ Subtraction Test Level 3</h2>
-<Link to={"/addsub3test"} className="nav-text"><img  width="400" height="300" alt="screenshot of multi 3" src={multi3}  className="sightcard"/>
-  </Link>
-  <br></br>
-  <br></br>
-  <p className='text-white'> A random number (0-100) will be added or subtracted from a number from (0-100).
-  </p>
- </div>
-
- </div>
-</div>
-</div> */}
 </div>
 <br></br>
   <br></br>

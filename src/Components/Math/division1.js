@@ -17,8 +17,8 @@ const Division1 =() => {
     var randomNumber2 = Math.floor(Math.random() * 10) + 1;
     var signs = ['/'];
 
-
-      setHighestNumber(randomNumber1 * randomNumber2);
+let highNumber = randomNumber1 * randomNumber2;
+      setHighestNumber(highNumber);
       console.log(`${highestNumber} ÷ ${randomNumber1} = ${randomNumber2}`);
     setFirstNumber(randomNumber1);
     setSecondNumber(randomNumber2);
@@ -38,12 +38,12 @@ const Division1 =() => {
 var msg = new SpeechSynthesisUtterance();
 
 
-if(sign === '/' ) {
+
   msg.text = "What does" + highestNumber + 'divided by' + firstnumber + "equal ?";
   msg.voice = window.speechSynthesis.getVoices()[2];
   msg.lang = "en-US";
 window.speechSynthesis.speak(msg);
-}
+
   }
 
 

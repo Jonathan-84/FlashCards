@@ -3,7 +3,7 @@ import React, { useState, useContext } from 'react';
 import { TrackerContext } from '../TrackerContext.js'
 
 
-const Division = ({ first, second, operator}) => {
+const Division = ({ first, second, operator, bigNumber}) => {
   const [result, setResult] = useState("");
 
   const { correct, wrong, count, gif, feedback } = useContext(TrackerContext);
@@ -24,7 +24,7 @@ const Division = ({ first, second, operator}) => {
     // Use the `answer` directly instead of relying on `result`
     // checkAnswer(answer);
   };
-  const sayAnswer = (firstnumber, secondnumber, bigNumber) => {
+  const sayAnswer = () => {
     
 
     if ('speechSynthesis' in window) {
