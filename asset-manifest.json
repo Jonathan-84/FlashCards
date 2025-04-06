@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/FlashCards/static/css/main.fe9ad5e7.css",
-    "main.js": "/FlashCards/static/js/main.686f230f.js",
+    "main.js": "/FlashCards/static/js/main.c44e47a9.js",
+    "static/media/FullSightTest.jpg": "/FlashCards/static/media/FullSightTest.f9ff4f8e1c302e07aa1a.jpg",
     "static/media/MultLvl3.jpg": "/FlashCards/static/media/MultLvl3.0a4677e6d09c7e6da1e2.jpg",
     "static/media/MultLvl2.jpg": "/FlashCards/static/media/MultLvl2.497e971f98c50105913f.jpg",
     "static/media/SubLvl2.jpg": "/FlashCards/static/media/SubLvl2.3ecd97e182ac2b97d3aa.jpg",
     "static/media/AddLvl3.jpg": "/FlashCards/static/media/AddLvl3.3390332a0f283715e96b.jpg",
     "static/media/SubLvl3.jpg": "/FlashCards/static/media/SubLvl3.505675a5e5d793ec65f4.jpg",
-    "static/media/FullSightTest.jpg": "/FlashCards/static/media/FullSightTest.a4414392c06c66a51829.jpg",
     "static/media/AddLvl1.jpg": "/FlashCards/static/media/AddLvl1.c10f0cefd6cafcac7885.jpg",
     "static/media/MultLvl1.jpg": "/FlashCards/static/media/MultLvl1.c39d545d7ede420148eb.jpg",
     "static/media/AddLvl2.jpg": "/FlashCards/static/media/AddLvl2.c37c02edc381675741c5.jpg",
@@ -18,10 +18,10 @@
     "static/media/NumberLvl1.jpg": "/FlashCards/static/media/NumberLvl1.7139695011596a524a57.jpg",
     "index.html": "/FlashCards/index.html",
     "main.fe9ad5e7.css.map": "/FlashCards/static/css/main.fe9ad5e7.css.map",
-    "main.686f230f.js.map": "/FlashCards/static/js/main.686f230f.js.map"
+    "main.c44e47a9.js.map": "/FlashCards/static/js/main.c44e47a9.js.map"
   },
   "entrypoints": [
     "static/css/main.fe9ad5e7.css",
-    "static/js/main.686f230f.js"
+    "static/js/main.c44e47a9.js"
   ]
 }
