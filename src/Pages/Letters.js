@@ -45,12 +45,12 @@ export default class Letters extends Component {
   <p className='text-white'>  Can your child identify the uppercase letter?</p>
  </div>
  <div className='col-md border bg-info rounded m-1'>
-<h2 className='text-center text-white h4'>Sight Word Test</h2>
+<h2 className='text-center text-white h4'>Sight Word Practice</h2>
 <Link to={"/sightrandom"} className="nav-text "><img width="400" height="300" alt="screenshot of random test" src={sighttest}  className="sightcard"/>
   </Link>
   <br></br>
   <br></br>
-  <p className='text-white'> Push the button for a random Sight Word, and let the quizzing begin.
+  <p className='text-white'> Sight word flashcards, see it in a sentence and hear it spoken.
   </p>
   </div>
 </div>

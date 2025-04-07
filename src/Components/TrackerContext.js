@@ -54,7 +54,7 @@ const randomEncouragement = ()=> {
   
 const randomLink = links[Math.floor(Math.random() * links.length)];
 setFeedback(randomLink); // Update gif state
-randomGif(); // Call to get a random gif when correct
+// randomGif(); // Call to get a random gif when correct
 console.log(randomLink);
 }
   const wrong = () => {

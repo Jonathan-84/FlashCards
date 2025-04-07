@@ -71,7 +71,7 @@ window.speechSynthesis.speak(msg);
     if
     (sign === '/') {
       problem=(
-        <h2 className='text-center'>{highestNumber} / {firstnumber}</h2>
+        <h2 className='text-center'>{highestNumber} ÷ {firstnumber}</h2>
      )
     
     }
