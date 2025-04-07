@@ -51,7 +51,7 @@ window.speechSynthesis.speak(msg);
     // const {firstnumber,sign, secondnumber} = this.state;
 
       let problem=(
-        <h2 className='text-center'>{highestNumber} / {firstnumber}</h2>
+        <h2 className='text-center'>{highestNumber} {sign} {firstnumber}</h2>
      )
     
  
