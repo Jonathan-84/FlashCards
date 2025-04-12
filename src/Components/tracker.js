@@ -11,9 +11,9 @@ const Tracker = () => {
   const [selectedValue, setSelectedValue] = useState(10);
   // const [progress, setProgress] = useState(0);
 
-  // useEffect(() => {
-  //   setProgress(percentageToGoal); // Update progress when context value changes
-  // }, [count]);
+  useEffect(() => {
+     // Update progress when context value changes
+  }, [gif]);
 
   console.log(percentageToGoal);
 

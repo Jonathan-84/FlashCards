@@ -9,6 +9,12 @@ export const TrackerProvider = ({ children }) => {
   const [percentageToGoal, setPercentageToGoal] = useState(10);
   const [feedback, setFeedback] = useState("");
   // const [positiveFeedback, setPositiveFeedback] = useState("");
+    const [ firstnumber, setFirstNumber ] = useState("");
+    const [ secondnumber, setSecondNumber ] = useState("");
+    const [ highestNumber, setHighestNumber ] = useState("");
+    const [ sign, setSign ]= useState("");
+    const [ answer, setAnswer]= useState("");
+    
 
    const targetProgress= async (count, target) => {
     let goal_progress = Math.round(count / target * 100);
@@ -63,6 +69,322 @@ randomGif(); // Call to get a random gif when correct
       }, 7000);
 }
 
+
+
+const getProblems = async (type) => { 
+  try {
+    let endResult;
+    let randomNumber1;
+    let randomNumber2;
+    let signs;
+    let randomSign;
+    let result;
+    switch (type) {
+      case 'multi1':
+        randomNumber1 = Math.floor(Math.random() * 10) + 1;
+        randomNumber2 = Math.floor(Math.random() * 10) + 1;
+        signs = ['X'];
+        endResult = randomNumber1 * randomNumber2;
+        setFirstNumber(randomNumber1);
+        setSecondNumber(randomNumber2);
+        setSign(signs);
+        setAnswer(endResult);
+       break;
+       case 'multi2':
+        randomNumber1 = Math.floor(Math.random() * 100) + 1;
+        randomNumber2 = Math.floor(Math.random() * 10) + 1;
+        signs = ['X'];
+        endResult = randomNumber1 * randomNumber2;
+        setFirstNumber(randomNumber1);
+        setSecondNumber(randomNumber2);
+        setSign(signs);
+        setAnswer(endResult);
+       break;
+       case 'multi3':
+        randomNumber1 = Math.floor(Math.random() * 100) + 1;
+        randomNumber2 = Math.floor(Math.random() * 100) + 1;
+        signs = ['X'];
+        endResult = randomNumber1 * randomNumber2;
+        setFirstNumber(randomNumber1);
+        setSecondNumber(randomNumber2);
+        setSign(signs);
+        setAnswer(endResult);
+       break;
+      case 'division1':
+         randomNumber1 = Math.floor(Math.random() * 10) + 1;
+         randomNumber2 = Math.floor(Math.random() * 10) + 1;
+         signs = ['/'];
+    
+    let highNumber = randomNumber1 * randomNumber2;
+          setHighestNumber(highNumber);
+          console.log(`${highestNumber} ÷ ${randomNumber1} = ${randomNumber2}`);
+        setFirstNumber(randomNumber1);
+        setSecondNumber(randomNumber2);
+        setSign(signs);
+        break;
+        case 'sub1':
+         randomNumber1 = Math.floor(Math.random() * 10) + 1;
+         randomNumber2 = Math.floor(Math.random() * 10) + 1;
+         signs = ['+'];
+
+         setFirstNumber(randomNumber1);
+         setSecondNumber(randomNumber2);
+         setSign(signs);
+         
+         if(randomNumber1 >= randomNumber2) {
+                 endResult= randomNumber1 - randomNumber2
+                  setAnswer(endResult);  
+          
+              }
+              else {
+                   endResult= randomNumber2 - randomNumber1;
+                  setAnswer(endResult);  
+              }
+        // setAnswer(endResult);     
+      break;
+      case 'sub2':
+        randomNumber1 = Math.floor(Math.random() * 100) + 1;
+        randomNumber2 = Math.floor(Math.random() * 10) + 1;
+        signs = ['+'];
+
+        setFirstNumber(randomNumber1);
+        setSecondNumber(randomNumber2);
+        setSign(signs);
+        
+        if(randomNumber1 >= randomNumber2) {
+                endResult= randomNumber1 - randomNumber2
+                 setAnswer(endResult);  
+         
+             }
+             else {
+                  endResult= randomNumber2 - randomNumber1;
+                 setAnswer(endResult);  
+             }
+       // setAnswer(endResult);     
+     break;
+     case 'sub3':
+      randomNumber1 = Math.floor(Math.random() * 100) + 1;
+      randomNumber2 = Math.floor(Math.random() * 100) + 1;
+      signs = ['+'];
+
+      setFirstNumber(randomNumber1);
+      setSecondNumber(randomNumber2);
+      setSign(signs);
+      
+      if(randomNumber1 >= randomNumber2) {
+              endResult= randomNumber1 - randomNumber2
+               setAnswer(endResult);  
+       
+           }
+           else {
+                endResult= randomNumber2 - randomNumber1;
+               setAnswer(endResult);  
+           }
+     // setAnswer(endResult);     
+   break;
+   case 'mix1':
+    randomNumber1 = Math.floor(Math.random() * 10) + 1;
+    randomNumber2 = Math.floor(Math.random() * 10) + 1;
+    signs = ['+', '-'];
+    randomSign = signs[Math.floor(Math.random() * signs.length)];
+    setFirstNumber(randomNumber1);
+    setSecondNumber(randomNumber2);
+    setSign(randomSign);
+
+    const calculateAndSetAnswer1 = async () => {
+      if (typeof sign === "undefined" || typeof randomNumber1 === "undefined" || typeof randomNumber2 === "undefined") {
+          console.error("One or more required variables are undefined");
+          return;
+      }
+  
+      let result;
+  
+      if (randomSign === "+") {
+          result = randomNumber1 + randomNumber2;
+        // await  setAnswer(result);
+      } else if (randomSign === "-" && randomNumber2 >= randomNumber1) {
+          result = randomNumber2 - randomNumber1;
+          // await setAnswer(result);
+      } else if (randomSign === "-" && randomNumber1 >= randomNumber2) {
+          result = randomNumber1 - randomNumber2;
+          // await setAnswer(result);
+      } else {
+          console.error("Invalid sign or unexpected values");
+          return;
+      }
+  
+      await setAnswer(result);
+      console.log("firstNumber", randomNumber1)
+      console.log("secondNumber", randomNumber2)
+      console.log("sign", randomSign)
+      console.log("Calculated answer:", result);
+      // console.log("State of answer:", answer);
+  };
+
+    calculateAndSetAnswer1(randomNumber1, randomNumber2, randomSign); // Call the async function
+    break;
+   case 'mix2':
+    randomNumber1 = Math.floor(Math.random() * 100) + 1;
+    randomNumber2 = Math.floor(Math.random() * 10) + 1;
+    signs = ['+', '-'];
+    randomSign = signs[Math.floor(Math.random() * signs.length)];
+    setFirstNumber(randomNumber1);
+    setSecondNumber(randomNumber2);
+    setSign(randomSign);
+
+    const calculateAndSetAnswer2 = async () => {
+      if (typeof sign === "undefined" || typeof randomNumber1 === "undefined" || typeof randomNumber2 === "undefined") {
+          console.error("One or more required variables are undefined");
+          return;
+      }
+  
+      let result;
+  
+      if (randomSign === "+") {
+          result = randomNumber1 + randomNumber2;
+        // await  setAnswer(result);
+      } else if (randomSign === "-" && randomNumber2 >= randomNumber1) {
+          result = randomNumber2 - randomNumber1;
+          // await setAnswer(result);
+      } else if (randomSign === "-" && randomNumber1 >= randomNumber2) {
+          result = randomNumber1 - randomNumber2;
+          // await setAnswer(result);
+      } else {
+          console.error("Invalid sign or unexpected values");
+          return;
+      }
+  
+      await setAnswer(result);
+      console.log("firstNumber", randomNumber1)
+      console.log("secondNumber", randomNumber2)
+      console.log("sign", randomSign)
+      console.log("Calculated answer:", result);
+      // console.log("State of answer:", answer);
+  };
+
+    calculateAndSetAnswer2(randomNumber1, randomNumber2, randomSign); // Call the async function
+   break;
+   case 'mix3':
+    randomNumber1 = Math.floor(Math.random() * 100) + 1;
+    randomNumber2 = Math.floor(Math.random() * 100) + 1;
+    signs = ['+', '-'];
+    randomSign = signs[Math.floor(Math.random() * signs.length)];
+    setFirstNumber(randomNumber1);
+    setSecondNumber(randomNumber2);
+    setSign(randomSign);
+
+    const calculateAndSetAnswer3 = async () => {
+      if (typeof sign === "undefined" || typeof randomNumber1 === "undefined" || typeof randomNumber2 === "undefined") {
+          console.error("One or more required variables are undefined");
+          return;
+      }
+  
+      let result;
+  
+      if (randomSign === "+") {
+          result = randomNumber1 + randomNumber2;
+        // await  setAnswer(result);
+      } else if (randomSign === "-" && randomNumber2 >= randomNumber1) {
+          result = randomNumber2 - randomNumber1;
+          // await setAnswer(result);
+      } else if (randomSign === "-" && randomNumber1 >= randomNumber2) {
+          result = randomNumber1 - randomNumber2;
+          // await setAnswer(result);
+      } else {
+          console.error("Invalid sign or unexpected values");
+          return;
+      }
+  
+      await setAnswer(result);
+      console.log("firstNumber", randomNumber1)
+      console.log("secondNumber", randomNumber2)
+      console.log("sign", randomSign)
+      console.log("Calculated answer:", result);
+      // console.log("State of answer:", answer);
+  };
+
+    calculateAndSetAnswer3(randomNumber1, randomNumber2, randomSign); // Call the async function
+    break;
+    // case 'multdiv':
+    //   randomNumber1 = Math.floor(Math.random() * 10) + 1;
+    //   randomNumber2 = Math.floor(Math.random() * 10) + 1;
+    //   signs = ['+', '-'];
+    //   randomSign = signs[Math.floor(Math.random() * signs.length)];
+    //   setFirstNumber(randomNumber1);
+    //   setSecondNumber(randomNumber2);
+    //   setSign(randomSign);
+  
+    //   const calculateAndSetAnswer1 = async () => {
+    //     if (typeof sign === "undefined" || typeof randomNumber1 === "undefined" || typeof randomNumber2 === "undefined") {
+    //         console.error("One or more required variables are undefined");
+    //         return;
+    //     }
+    
+    //     let result;
+    
+    //     if (randomSign === "+") {
+    //         result = randomNumber1 + randomNumber2;
+    //       // await  setAnswer(result);
+    //     } else if (randomSign === "-" && randomNumber2 >= randomNumber1) {
+    //         result = randomNumber2 - randomNumber1;
+    //         // await setAnswer(result);
+    //     } else if (randomSign === "-" && randomNumber1 >= randomNumber2) {
+    //         result = randomNumber1 - randomNumber2;
+    //         // await setAnswer(result);
+    //     } else {
+    //         console.error("Invalid sign or unexpected values");
+    //         return;
+    //     }
+    
+    //     await setAnswer(result);
+    //     console.log("firstNumber", randomNumber1)
+    //     console.log("secondNumber", randomNumber2)
+    //     console.log("sign", randomSign)
+    //     console.log("Calculated answer:", result);
+    //     // console.log("State of answer:", answer);
+    // };
+  
+    //   calculateAndSetAnswer1(randomNumber1, randomNumber2, randomSign); // Call the async function
+    //   break;
+      case 'add1':
+         randomNumber1 = Math.floor(Math.random() * 10) + 1;
+         randomNumber2 = Math.floor(Math.random() * 10) + 1;
+         signs = ['+'];
+        endResult = randomNumber1 + randomNumber2;
+        setFirstNumber(randomNumber1);
+        setSecondNumber(randomNumber2);
+        setSign(signs);
+        setAnswer(endResult);
+       
+      break;
+      case 'add2':
+         randomNumber1 = Math.floor(Math.random() * 100) + 1;
+        randomNumber2 = Math.floor(Math.random() * 10) + 1;
+        signs = ['+'];
+        endResult = randomNumber1 + randomNumber2;
+        setFirstNumber(randomNumber1);
+        setSecondNumber(randomNumber2);
+        setSign(signs);
+        setAnswer(endResult);
+        break;
+      case 'add3':
+        randomNumber1 = Math.floor(Math.random() * 100) + 1;
+        randomNumber2 = Math.floor(Math.random() * 100) + 1;
+        signs = ['+'];
+        endResult = randomNumber1 + randomNumber2;
+        setFirstNumber(randomNumber1);
+        setSecondNumber(randomNumber2);
+        setSign(signs);
+        setAnswer(endResult);
+        break;
+      default:
+        console.warn(`Unknown resource type: ${type}`);
+    }
+  } catch (error) {
+    console.error(`Error fetching ${type}:`, error);
+  }
+};
+
 const randomEncouragement = ()=> {
   let links = ['Good Try!','Better luck next time.','Keep practicing.','Do not give up, you will get this!'];
   
@@ -88,7 +410,9 @@ console.log(randomLink);
 
 
   return (
-    <TrackerContext.Provider value={{ correct, wrong, reset, count, gif, target, setTarget, percentageToGoal,feedback }}>
+    <TrackerContext.Provider value={{ correct, wrong, reset, count,
+     gif, target, setTarget, percentageToGoal, answer ,
+     firstnumber, secondnumber, highestNumber, sign , feedback, getProblems }}>
       {children}
     </TrackerContext.Provider>
   );

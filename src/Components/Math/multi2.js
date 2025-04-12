@@ -1,49 +1,47 @@
-import React, { Component } from 'react';
-import Multiplication from './Multiplication';
+import React, { useState, useContext } from 'react';
+import { TrackerContext } from '../TrackerContext.js'
+const Multi2 =() => {
+  const { correct, wrong, count, reset, gif, getProblems, sign, highestNumber, answer, firstnumber,secondnumber } = useContext(TrackerContext);
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  // generateNumbers = () => {
+  //   var randomNumber1 = Math.floor(Math.random() * 10) + 1;
+  //   var randomNumber2 = Math.floor(Math.random() * 10) + 1;
 
 
-export default class multi2 extends Component {
+  //   this.setState({ firstnumber: randomNumber1,secondnumber:randomNumber2 })
+  // }
 
-  constructor() {
-    super();
-    this.state = {
-      // This is a default value...
-      firstnumber: [0],
-      secondnumber:[0]
-
-    }
-  }
-
-  generateNumbers = () => {
-    var randomNumber1 = Math.floor(Math.random() * 100) + 1;
-    var randomNumber2 = Math.floor(Math.random() * 10) + 1;
-
-
-    this.setState({ firstnumber: randomNumber1,secondnumber:randomNumber2 })
-  
-  }
-
-  sayQuestion = () => {
-    const {firstnumber,secondnumber} = this.state;
+ const  sayQuestion = () => {
 
     if ('speechSynthesis' in window) {
-
      }else{
-
        alert("Sorry, your browser doesn't support text to speech!");
      }
 
 var msg = new SpeechSynthesisUtterance();
-msg.text = "What does" + firstnumber + "multiplied by" + secondnumber + "equal?";
+msg.text = "What does" + firstnumber + "times" + secondnumber + "equal ?";
 msg.lang = "en-US"
 // msg.voice = window.speechSynthesis.getVoices()[2];
 window.speechSynthesis.speak(msg);
   }
 
+  const sayAnswer = () => {
+    
+    if ('speechSynthesis' in window) {
+  
+     }else{
+    
+       alert("Sorry, your browser doesn't support text to speech!");
+     }
 
-  render() {
+     var msg = new SpeechSynthesisUtterance();
+msg.text = firstnumber + "times" + secondnumber + "equals"+ answer;
+msg.lang = "en-US"
+// msg.voice = window.speechSynthesis.getVoices()[2];
+window.speechSynthesis.speak(msg);
+  }
 
-    const {firstnumber,secondnumber} = this.state;
     
     return (
       <>
@@ -55,18 +53,26 @@ window.speechSynthesis.speak(msg);
   <div className="card-header text-center">Level 2 Multiplication</div>
   <div className="card-body ">
   <div className='col  d-flex justify-content-center'>
-  <p>What is the product? </p>
+  <p>What is the answer? </p>
   </div>
     <div className='d-flex justify-content-center'>
-        <button className='m-1' title="Generate Random Number" onClick={this.generateNumbers}>Generate Numbers</button> 
-        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={this.sayQuestion}><span><i className="fa-solid fa-volume-high"></i></span></button>
+        <button className='m-1' title="Generate Random Number" onClick={() => getProblems('multi2')}>Generate Numbers</button> 
+        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={sayQuestion}><span><i className="fa-solid fa-volume-high"></i></span></button>
         </div>
-        <h2 className='text-center'>{firstnumber} x {secondnumber}</h2>
+        <h2 className='text-center'>{firstnumber} {sign} {secondnumber}</h2>
       
         <br></br>
    
         <div className='d-flex justify-content-center'>
-           <Multiplication first={this.state.firstnumber} second={this.state.secondnumber}></Multiplication>
+        <div>
+        <button className='m-1' title="Check Answer" onClick={() => {
+  setShowAnswer(!showAnswer);
+  setTimeout(() => setShowAnswer(false), 10000);
+}}>Check the Answer</button> 
+        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={sayAnswer}><span><i className="fa-solid fa-volume-high"></i></span></button>
+        {/* <i className="fa-regular fa-volume"></i> */}
+        {showAnswer && <h2 className='text-center'>{answer}</h2>}
+        </div>
            </div>
            </div>
            </div>
@@ -77,6 +83,7 @@ window.speechSynthesis.speak(msg);
   </>
       );
     }
-  }
+
+    export default Multi2;
 
 

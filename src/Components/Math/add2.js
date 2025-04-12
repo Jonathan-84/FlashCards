@@ -1,34 +1,22 @@
-import React, { Component } from 'react';
-import Addition from './Addition';
+import React, { useState, useContext } from 'react';
+import { TrackerContext } from '../TrackerContext.js'
+
+const Add2 =() => {
+  const { correct, wrong, count, reset, gif, getProblems, sign, highestNumber, answer, firstnumber,secondnumber } = useContext(TrackerContext);
+  const [showAnswer, setShowAnswer] = useState(false);
+
+  // generateNumbers = () => {
+  //   var randomNumber1 = Math.floor(Math.random() * 10) + 1;
+  //   var randomNumber2 = Math.floor(Math.random() * 10) + 1;
 
 
-export default class add2 extends Component {
+  //   this.setState({ firstnumber: randomNumber1,secondnumber:randomNumber2 })
+  // }
 
-  constructor() {
-    super();
-    this.state = {
-      // This is a default value...
-      firstnumber: [0],
-      secondnumber:[0]
-
-    }
-  }
-
-  generateNumbers = () => {
-    var randomNumber1 = Math.floor(Math.random() * 100) + 1;
-    var randomNumber2 = Math.floor(Math.random() * 10) + 1;
-
-
-    this.setState({ firstnumber: randomNumber1,secondnumber:randomNumber2 })
-  }
-
-  sayQuestion = () => {
-    const {firstnumber,secondnumber} = this.state;
+ const  sayQuestion = () => {
 
     if ('speechSynthesis' in window) {
-
      }else{
-
        alert("Sorry, your browser doesn't support text to speech!");
      }
 
@@ -39,11 +27,22 @@ msg.lang = "en-US"
 window.speechSynthesis.speak(msg);
   }
 
+  const sayAnswer = () => {
+    
+    if ('speechSynthesis' in window) {
+  
+     }else{
+    
+       alert("Sorry, your browser doesn't support text to speech!");
+     }
 
+     var msg = new SpeechSynthesisUtterance();
+msg.text = firstnumber + "plus" + secondnumber + "equals"+ answer;
+msg.lang = "en-US"
+// msg.voice = window.speechSynthesis.getVoices()[2];
+window.speechSynthesis.speak(msg);
+  }
 
-  render() {
-
-    const {firstnumber,secondnumber} = this.state;
     
     return (
       <>
@@ -58,15 +57,23 @@ window.speechSynthesis.speak(msg);
   <p>What is the sum? </p>
   </div>
     <div className='d-flex justify-content-center'>
-        <button className='m-1' title="Generate Random Number" onClick={this.generateNumbers}>Generate Numbers</button> 
-        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={this.sayQuestion}><span><i className="fa-solid fa-volume-high"></i></span></button>
+        <button className='m-1' title="Generate Random Number" onClick={() => getProblems('add2')}>Generate Numbers</button> 
+        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={sayQuestion}><span><i className="fa-solid fa-volume-high"></i></span></button>
         </div>
         <h2 className='text-center'>{firstnumber} + {secondnumber}</h2>
       
         <br></br>
    
         <div className='d-flex justify-content-center'>
-           <Addition first={this.state.firstnumber} second={this.state.secondnumber}></Addition>
+        <div>
+        <button className='m-1' title="Check Answer" onClick={() => {
+  setShowAnswer(!showAnswer);
+  setTimeout(() => setShowAnswer(false), 10000);
+}}>Check the Answer</button> 
+        <button data-bs-toggle="tooltip" data-bs-placement="top" title="Click To Listen" className='m-1' onClick={sayAnswer}><span><i className="fa-solid fa-volume-high"></i></span></button>
+        {/* <i className="fa-regular fa-volume"></i> */}
+        {showAnswer && <h2 className='text-center'>{answer}</h2>}
+        </div>
            </div>
            </div>
            </div>
@@ -77,6 +84,7 @@ window.speechSynthesis.speak(msg);
   </>
       );
     }
-  }
+
+    export default Add2;
 
 
